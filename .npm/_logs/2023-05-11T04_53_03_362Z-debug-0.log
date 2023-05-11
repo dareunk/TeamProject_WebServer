@@ -1,0 +1,60 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@9.5.1
+2 info using node@v18.16.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/home/happyeunnn11/example/spotify-web-player/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 3ms
+11 timing config:load:file:/home/happyeunnn11/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 10ms
+17 timing npm:load:configload Completed in 10ms
+18 timing npm:load:mkdirpcache Completed in 1ms
+19 timing npm:load:mkdirplogs Completed in 0ms
+20 verbose title npm install npm-run-all
+21 verbose argv "install" "npm-run-all" "--save-dev"
+22 timing npm:load:setTitle Completed in 1ms
+23 timing config:load:flatten Completed in 3ms
+24 timing npm:load:display Completed in 4ms
+25 verbose logfile logs-max:10 dir:/home/happyeunnn11/.npm/_logs/2023-05-11T04_53_03_362Z-
+26 verbose logfile /home/happyeunnn11/.npm/_logs/2023-05-11T04_53_03_362Z-debug-0.log
+27 timing npm:load:logFile Completed in 5ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 22ms
+31 timing arborist:ctor Completed in 0ms
+32 silly logfile start cleaning logs, removing 1 files
+33 silly logfile done cleaning log files
+34 timing idealTree Completed in 2ms
+35 timing command:install Completed in 11ms
+36 verbose stack JSONParseError: Unexpected token "/" (0x2F) in JSON at position 492 while parsing near "...p server start\"\n    //\"test\": \"react-scr..."
+36 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json-fast/lib/index.js:7:61
+36 verbose stack     at async Arborist.buildIdealTree (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:204:7)
+36 verbose stack     at async Promise.all (index 1)
+36 verbose stack     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:159:5)
+36 verbose stack     at async Install.exec (/usr/local/lib/node_modules/npm/lib/commands/install.js:146:5)
+36 verbose stack     at async module.exports (/usr/local/lib/node_modules/npm/lib/cli.js:134:5)
+37 verbose cwd /home/happyeunnn11/example/spotify-web-player
+38 verbose Linux 5.15.0-1032-gcp
+39 verbose node v18.16.0
+40 verbose npm  v9.5.1
+41 error code EJSONPARSE
+42 error path /home/happyeunnn11/example/spotify-web-player/package.json
+43 error JSON.parse Unexpected token "/" (0x2F) in JSON at position 492 while parsing near "...p server start\"\n    //\"test\": \"react-scr..."
+44 error JSON.parse Failed to parse JSON data.
+44 error JSON.parse Note: package.json must be actual JSON, not just JavaScript.
+45 verbose exit 1
+46 timing npm Completed in 53ms
+47 verbose unfinished npm timer reify 1683780783401
+48 verbose unfinished npm timer reify:loadTrees 1683780783404
+49 verbose unfinished npm timer idealTree:init 1683780783405
+50 verbose code 1
+51 error A complete log of this run can be found in:
+51 error     /home/happyeunnn11/.npm/_logs/2023-05-11T04_53_03_362Z-debug-0.log

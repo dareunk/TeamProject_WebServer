@@ -1,0 +1,64 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #24222C;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    background: #24222C;
+    height: 550px;
+    top: 50px;
+}
+
+.container .logo {
+    position: absolute;
+    top: 120px;
+    left: 600px;
+}
+
+.container .phrase {
+    position: absolute;
+    top: 375px;
+    left: 655px;
+    height: 40px;
+    font-size: 25px;
+    color: white;
+    font: bolder;
+}
+
+.container .login {
+    position: absolute;
+    top: 450px;
+    left: 630px;
+    color: white;
+}
+
+.container .login a {
+    position: absolute;
+    color: white;
+    font: bolder;
+    font-size: 25px;
+    width: 135px;
+    border-right: 3.5px solid white;
+    border-right-color: white;
+}
+
+.container .signup {
+    position: absolute;
+    top: 450px;
+    left: 820px;
+    width: 100px;
+    color: white;
+}
+
+.container .signup a {
+    position: absolute;
+    color: white;
+    font: bolder;
+    font-size: 25px;
+}
