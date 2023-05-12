@@ -10,14 +10,19 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/\<0\>
+
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1683818118,,"wq"
+|2,0,1683868254,,"wq"
 :q
-|2,0,1683818094,,"q"
+|2,0,1683868200,,"q"
+:D
+|2,0,1683868052,,"D"
 :!
 |2,0,1683817403,,"!"
 :w
@@ -27,250 +32,290 @@ $
 
 # Search String History (newest to oldest):
 ? @$
-|2,1,1683779861,,"@$"
+|2,1,1683868199,,"@$"
+? \<0\>
+|2,1,1683867586,,"\\<0\\>"
 
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@node_modules/
+|2,3,1683867663,,"node_modules/"
+@./
+|2,3,1683867512,,"./"
+@web-api-examples
+|2,3,1683867379,,"web-api-examples"
+@node_modules
+|2,3,1683867304,,"node_modules"
 
 # Debug Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
+"1	BLOCK	32
+	.profile                         
+	.viminfo                         
+	.wget-hsts                       
+	main.js                          
+	node-v18.16.0-linux-x64.tar.xz   
+	package-lock.json                
+	package.json                     
+|3,0,1,2,7,32,1683868065,".profile                         ",".viminfo                         ",".wget-hsts                       ","main.js                          ","node-v18.16.0-linux-x64.tar.xz   ","package-lock.json                ","package.json                     "
+"2	BLOCK	32
+	node-v18.16.0-linux-x64/         
+	node_modules/                    
+	public/                          
+	views/                           
+	web-api-examples/                
+	.bash_history                    
+	.bash_logout                     
+	.bashrc                          
+	.gitconfig                       
+|3,0,2,2,9,32,1683868065,"node-v18.16.0-linux-x64/         ","node_modules/                    ","public/                          ","views/                           ","web-api-examples/                ",".bash_history                    ",".bash_logout                     ",".bashrc                          ",".gitconfig                       "
+"3	LINE	0
 	    <link rel="stylesheet" type="text/css" href="/style.css">
-|3,1,1,1,1,0,1683817261,"    <link rel=\"stylesheet\" type=\"text/css\" href=\"/style.css\">"
+|3,0,3,1,1,0,1683817261,"    <link rel=\"stylesheet\" type=\"text/css\" href=\"/style.css\">"
+"-	BLOCK	19
+	web-api-examples/   
+|3,0,36,2,1,19,1683868064,"web-api-examples/   "
 
 # File marks:
-'0  18  46  ~/public/index.html
-|4,48,18,46,1683818118,"~/public/index.html"
-'1  64  0  ~/public/css/style.css
-|4,49,64,0,1683818108,"~/public/css/style.css"
-'2  18  46  ~/public/index.html
-|4,50,18,46,1683818088,"~/public/index.html"
-'3  20  23  ~/public/index.html
-|4,51,20,23,1683817917,"~/public/index.html"
-'4  20  23  ~/public/index.html
-|4,52,20,23,1683817917,"~/public/index.html"
-'5  20  23  ~/public/index.html
-|4,53,20,23,1683817917,"~/public/index.html"
-'6  20  23  ~/public/index.html
-|4,54,20,23,1683817917,"~/public/index.html"
-'7  18  68  ~/public/index.html
-|4,55,18,68,1683817822,"~/public/index.html"
-'8  18  68  ~/public/index.html
-|4,56,18,68,1683817822,"~/public/index.html"
-'9  18  68  ~/public/index.html
-|4,57,18,68,1683817822,"~/public/index.html"
+'0  2  16  ~/.gitignore
+|4,48,2,16,1683868254,"~/.gitignore"
+'1  2  16  ~/.gitignore
+|4,49,2,16,1683868238,"~/.gitignore"
+'2  6  0  ~/.gitignore
+|4,50,6,0,1683868200,"~/.gitignore"
+'3  8  0  ~/.gitignore
+|4,51,8,0,1683868200,"~/.gitignore"
+'4  6  0  ~/.gitignore
+|4,52,6,0,1683868200,"~/.gitignore"
+'5  8  0  ~/.gitignore
+|4,53,8,0,1683868200,"~/.gitignore"
+'6  1  72  ~/
+|4,54,1,72,1683868077,"~/"
+'7  8  72  ~/
+|4,55,8,72,1683868077,"~/"
+'8  1  0  ~/
+|4,56,1,0,1683867500,"~/"
+'9  34  55  ~/public/index.html
+|4,57,34,55,1683866712,"~/public/index.html"
 
 # Jumplist (newest first):
--'  18  46  ~/public/index.html
-|4,39,18,46,1683818118,"~/public/index.html"
--'  64  0  ~/public/css/style.css
-|4,39,64,0,1683818108,"~/public/css/style.css"
--'  64  0  ~/public/css/style.css
-|4,39,64,0,1683818108,"~/public/css/style.css"
--'  18  46  ~/public/index.html
-|4,39,18,46,1683818088,"~/public/index.html"
--'  18  46  ~/public/index.html
-|4,39,18,46,1683818088,"~/public/index.html"
--'  18  46  ~/public/index.html
-|4,39,18,46,1683818088,"~/public/index.html"
--'  18  46  ~/public/index.html
-|4,39,18,46,1683818088,"~/public/index.html"
--'  20  23  ~/public/index.html
-|4,39,20,23,1683817993,"~/public/index.html"
--'  20  23  ~/public/index.html
-|4,39,20,23,1683817993,"~/public/index.html"
--'  20  23  ~/public/index.html
-|4,39,20,23,1683817993,"~/public/index.html"
--'  20  23  ~/public/index.html
-|4,39,20,23,1683817993,"~/public/index.html"
--'  20  23  ~/public/index.html
-|4,39,20,23,1683817993,"~/public/index.html"
--'  20  23  ~/public/index.html
-|4,39,20,23,1683817917,"~/public/index.html"
--'  20  23  ~/public/index.html
-|4,39,20,23,1683817917,"~/public/index.html"
--'  20  23  ~/public/index.html
-|4,39,20,23,1683817917,"~/public/index.html"
--'  20  23  ~/public/index.html
-|4,39,20,23,1683817917,"~/public/index.html"
--'  18  68  ~/public/index.html
-|4,39,18,68,1683817901,"~/public/index.html"
--'  18  68  ~/public/index.html
-|4,39,18,68,1683817901,"~/public/index.html"
--'  18  68  ~/public/index.html
-|4,39,18,68,1683817901,"~/public/index.html"
--'  18  68  ~/public/index.html
-|4,39,18,68,1683817901,"~/public/index.html"
--'  18  68  ~/public/index.html
-|4,39,18,68,1683817822,"~/public/index.html"
--'  18  68  ~/public/index.html
-|4,39,18,68,1683817822,"~/public/index.html"
--'  18  68  ~/public/index.html
-|4,39,18,68,1683817822,"~/public/index.html"
--'  18  68  ~/public/index.html
-|4,39,18,68,1683817822,"~/public/index.html"
--'  20  22  ~/public/index.html
-|4,39,20,22,1683817801,"~/public/index.html"
--'  20  22  ~/public/index.html
-|4,39,20,22,1683817801,"~/public/index.html"
--'  20  22  ~/public/index.html
-|4,39,20,22,1683817801,"~/public/index.html"
--'  20  22  ~/public/index.html
-|4,39,20,22,1683817801,"~/public/index.html"
--'  20  22  ~/public/index.html
-|4,39,20,22,1683817638,"~/public/index.html"
--'  20  22  ~/public/index.html
-|4,39,20,22,1683817638,"~/public/index.html"
--'  20  22  ~/public/index.html
-|4,39,20,22,1683817638,"~/public/index.html"
--'  20  22  ~/public/index.html
-|4,39,20,22,1683817638,"~/public/index.html"
--'  20  32  ~/public/index.html
-|4,39,20,32,1683817536,"~/public/index.html"
--'  20  32  ~/public/index.html
-|4,39,20,32,1683817536,"~/public/index.html"
--'  20  32  ~/public/index.html
-|4,39,20,32,1683817536,"~/public/index.html"
--'  20  32  ~/public/index.html
-|4,39,20,32,1683817536,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  1  0  ~/public/index.html
-|4,39,1,0,1683817508,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  63  18  ~/public/index.html
-|4,39,63,18,1683817500,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
--'  64  0  ~/public/index.html
-|4,39,64,0,1683817487,"~/public/index.html"
+-'  2  16  ~/.gitignore
+|4,39,2,16,1683868254,"~/.gitignore"
+-'  2  16  ~/.gitignore
+|4,39,2,16,1683868238,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1683868212,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1683868212,"~/.gitignore"
+-'  6  0  ~/.gitignore
+|4,39,6,0,1683868200,"~/.gitignore"
+-'  8  0  ~/.gitignore
+|4,39,8,0,1683868200,"~/.gitignore"
+-'  6  0  ~/.gitignore
+|4,39,6,0,1683868200,"~/.gitignore"
+-'  8  0  ~/.gitignore
+|4,39,8,0,1683868200,"~/.gitignore"
+-'  1  72  ~/
+|4,39,1,72,1683868077,"~/"
+-'  8  72  ~/
+|4,39,8,72,1683868077,"~/"
+-'  1  72  ~/
+|4,39,1,72,1683868077,"~/"
+-'  8  72  ~/
+|4,39,8,72,1683868077,"~/"
+-'  1  72  ~/
+|4,39,1,72,1683868077,"~/"
+-'  8  72  ~/
+|4,39,8,72,1683868077,"~/"
+-'  1  72  ~/
+|4,39,1,72,1683868077,"~/"
+-'  8  72  ~/
+|4,39,8,72,1683868077,"~/"
+-'  8  0  ~/.gitignore
+|4,39,8,0,1683868065,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1683868049,"~/.gitignore"
+-'  7  0  ~/.gitignore
+|4,39,7,0,1683868040,"~/.gitignore"
+-'  9  0  ~/.gitignore
+|4,39,9,0,1683868040,"~/.gitignore"
+-'  7  0  ~/.gitignore
+|4,39,7,0,1683868040,"~/.gitignore"
+-'  9  0  ~/.gitignore
+|4,39,9,0,1683868040,"~/.gitignore"
+-'  9  0  ~/.gitignore
+|4,39,9,0,1683867761,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1683867656,"~/.gitignore"
+-'  8  48  ~/.gitignore
+|4,39,8,48,1683867644,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1683867589,"~/.gitignore"
+-'  8  1  ~/.gitignore
+|4,39,8,1,1683867530,"~/.gitignore"
+-'  17  0  ~/
+|4,39,17,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  17  0  ~/
+|4,39,17,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  17  0  ~/
+|4,39,17,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  17  0  ~/
+|4,39,17,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  31  0  ~/
+|4,39,31,0,1683867500,"~/"
+-'  9  0  ~/.gitignore
+|4,39,9,0,1683867490,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1683867407,"~/.gitignore"
+-'  8  0  ~/.gitignore
+|4,39,8,0,1683867386,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1683867379,"~/.gitignore"
+-'  8  0  ~/.gitignore
+|4,39,8,0,1683867307,"~/.gitignore"
 
 # History of marks within files (newest to oldest):
 
+> ~/.gitignore
+	*	1683868250	0
+	"	2	16
+	^	2	17
+	.	2	16
+	+	2	16
+
 > ~/public/index.html
-	*	1683818118	0
-	"	18	46
-	^	18	47
-	.	18	47
+	*	1683866711	0
+	"	34	55
+	^	25	31
+	.	25	30
 	+	1	15
 	+	37	6
 	+	34	21
@@ -296,14 +341,37 @@ $
 	+	20	23
 	+	18	49
 	+	20	23
-	+	18	47
+	+	18	33
+	+	25	30
 
 > ~/public/css/style.css
-	*	1683818108	0
-	"	64	0
+	*	1683866697	0
+	"	18	14
 	^	64	1
 	.	64	0
 	+	64	0
+
+> ~/main.js
+	*	1683865460	0
+	"	4	57
+	^	4	58
+	.	5	0
+	+	4	57
+	+	3	16
+	+	6	72
+	+	4	92
+	+	4	58
+	+	6	33
+	+	6	72
+	+	6	87
+	+	10	0
+	+	4	56
+	+	4	58
+	+	8	41
+	+	4	56
+	+	5	4
+	+	6	34
+	+	5	0
 
 > ~/public/style.css
 	*	1683817200	0
@@ -311,26 +379,6 @@ $
 	^	64	1
 	.	64	0
 	+	64	0
-
-> ~/main.js
-	*	1683816906	0
-	"	6	32
-	^	6	33
-	.	6	32
-	+	4	57
-	+	3	16
-	+	7	72
-	+	5	34
-	+	5	0
-	+	7	33
-	+	7	72
-	+	7	87
-	+	10	0
-	+	4	56
-	+	5	0
-	+	8	41
-	+	4	56
-	+	6	32
 
 > ~/controllers/homeController.js
 	*	1683816240	0
