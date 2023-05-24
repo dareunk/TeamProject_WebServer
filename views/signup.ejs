@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<% -include("partials/head") %>
+	</head>
+
+	<body>
+		<div>
+		<h1> SING UP</h1>
+		</div>
+		<div>
+			<input type="file" class="upload" name="pofile_image" accept="image/*" required multiple>i
+		<form action="/signup" method="post">
+			<p>ID<input type="text" name="id" value=""></p>
+			<p>Password<input type="password" name="password" value=""></p>
+			<p>Re-enter Password<input type="password" name="rePassword" value=""></p>
+			<p>Name<input type="text" name="name" value=""></p>
+			<p>Mobile Number<input type="text" name="phone" value=""></p>
+			<p>Nickname<input type="text" name="nickname" value=""></p>
+			<input class="button" type="submit" value="done">
+		</form>
+	</body>
+</html>
+
+

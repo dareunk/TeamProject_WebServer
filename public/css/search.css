@@ -1,0 +1,26 @@
+li{
+	list-style:disc;
+	color:#fff;
+}
+#allbanner{
+width:300px;
+height:100%;
+float:right;
+display:inline-block;
+}
+#bannerforsearch{
+width:300px;
+height:20%;
+margin 0 5px;
+}
+
+#linkedbox{
+width:300px;
+height:80%;
+background-color: white;
+opacity:0;
+}
+
+#linkedbox:hover{
+opacity:1;
+}

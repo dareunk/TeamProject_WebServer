@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web API Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- 구글 폰트: main.css보다 먼저 불러올 수 있도록 함 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- Google material Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- 파비콘 설정-->
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="">
+    <script src="./app.js"></script>
+</head>
+
+<body onload = "onPageLoad()">
+	<div class = "container">
+
+		<div id="tokenSection" class="row">
+			<div class="col">
+				<div class="mb-3">
+					<label for="clientId" class="form-label">Client ID</label>
+					<input type="text" class="form-control" id="clientId" placeholder="">
+				</div>
+				<div class="mb-3">
+					<label for="clientSecret" class="form-label">Client Secret</label>
+					<input type="text" class="form-control" id="clientSecret" placeholder="">
+				</div>
+				<input class="btn btn-primary btn-lg" type="button" onclick="requestAuthorization()" value="Request Authorization"><br/>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

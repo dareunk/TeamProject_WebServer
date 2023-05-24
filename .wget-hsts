@@ -3,4 +3,4 @@
 # <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
 nodejs.org	0	1	1683768889	31536000
 api.spotify.com	0	0	1683780197	31536000
-github.com	0	1	1683867123	31536000
+github.com	0	1	1684673289	31536000
