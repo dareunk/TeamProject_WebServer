@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlists</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .playlist-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+      margin: 20px;
+    }
+
+    .playlist-item {
+      text-align: center;
+    }
+
+    .playlist-image {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 10px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .playlist-name {
+      font-weight: bold;
+    }
+
+    .playlist-link {
+      color: #1db954;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Playlists</h1>
+  <div class="playlist-container">
+    <% playlists.body.items.reverse().forEach(function(playlist) { %>
+      <div class="playlist-item">
+        <a href="/playlist/<%= playlist.id %>" class="playlist-link">
+          <img src="<%= playlist.images[0].url %>" alt="Playlist Image" class="playlist-image">
+          <div class="playlist-name"><%= playlist.name %></div>
+        </a>
+      </div>
+    <% }); %>
+  </div>
+  <div>
+      <ul>
+        <li><a href="/plimatelist">playlist</a></li>
+      </ul>
+    </div>
+</body>
+</html>
+

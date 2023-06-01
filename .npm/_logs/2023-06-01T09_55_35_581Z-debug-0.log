@@ -1,0 +1,376 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@9.5.1
+2 info using node@v18.16.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 0ms
+6 timing config:load:builtin Completed in 0ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/home/happyeunnn11/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 1ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 8ms
+16 timing npm:load:configload Completed in 8ms
+17 timing npm:load:mkdirpcache Completed in 0ms
+18 timing npm:load:mkdirplogs Completed in 0ms
+19 verbose title npm install session-file-store
+20 verbose argv "install" "session-file-store" "--save"
+21 timing npm:load:setTitle Completed in 2ms
+22 timing config:load:flatten Completed in 3ms
+23 timing npm:load:display Completed in 4ms
+24 verbose logfile logs-max:10 dir:/home/happyeunnn11/.npm/_logs/2023-06-01T09_55_35_581Z-
+25 verbose logfile /home/happyeunnn11/.npm/_logs/2023-06-01T09_55_35_581Z-debug-0.log
+26 timing npm:load:logFile Completed in 5ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 21ms
+30 timing arborist:ctor Completed in 1ms
+31 silly logfile start cleaning logs, removing 1 files
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 170ms
+34 timing idealTree:userRequests Completed in 3ms
+35 silly idealTree buildDeps
+36 silly fetch manifest session-file-store@*
+37 timing arborist:ctor Completed in 0ms
+38 http fetch GET 200 https://registry.npmjs.org/session-file-store 866ms (cache miss)
+39 silly placeDep ROOT session-file-store@1.5.0 OK for: happyeunnn11@1.0.0 want: *
+40 silly fetch manifest bagpipe@^0.3.5
+41 silly fetch manifest fs-extra@^8.0.1
+42 silly fetch manifest kruptein@^2.0.4
+43 silly fetch manifest retry@^0.12.0
+44 silly fetch manifest write-file-atomic@3.0.3
+45 http fetch GET 200 https://registry.npmjs.org/retry 43ms (cache miss)
+46 http fetch GET 200 https://registry.npmjs.org/write-file-atomic 57ms (cache miss)
+47 http fetch GET 200 https://registry.npmjs.org/fs-extra 63ms (cache miss)
+48 http fetch GET 200 https://registry.npmjs.org/kruptein 238ms (cache miss)
+49 http fetch GET 200 https://registry.npmjs.org/bagpipe 682ms (cache miss)
+50 timing idealTree:#root Completed in 1558ms
+51 silly placeDep ROOT bagpipe@0.3.5 OK for: session-file-store@1.5.0 want: ^0.3.5
+52 silly placeDep ROOT fs-extra@8.1.0 OK for: session-file-store@1.5.0 want: ^8.0.1
+53 silly placeDep ROOT kruptein@2.2.3 OK for: session-file-store@1.5.0 want: ^2.0.4
+54 silly placeDep ROOT retry@0.12.0 OK for: session-file-store@1.5.0 want: ^0.12.0
+55 silly placeDep ROOT write-file-atomic@3.0.3 OK for: session-file-store@1.5.0 want: 3.0.3
+56 silly fetch manifest graceful-fs@^4.2.0
+57 silly fetch manifest jsonfile@^4.0.0
+58 silly fetch manifest universalify@^0.1.0
+59 silly fetch manifest asn1.js@^5.4.1
+60 silly fetch manifest imurmurhash@^0.1.4
+61 silly fetch manifest signal-exit@^3.0.2
+62 silly fetch manifest typedarray-to-buffer@^3.1.5
+63 http fetch GET 200 https://registry.npmjs.org/universalify 44ms (cache miss)
+64 http fetch GET 200 https://registry.npmjs.org/jsonfile 50ms (cache miss)
+65 http fetch GET 200 https://registry.npmjs.org/asn1.js 57ms (cache miss)
+66 http fetch GET 200 https://registry.npmjs.org/signal-exit 58ms (cache miss)
+67 http fetch GET 200 https://registry.npmjs.org/typedarray-to-buffer 59ms (cache miss)
+68 http fetch GET 200 https://registry.npmjs.org/imurmurhash 79ms (cache miss)
+69 http fetch GET 200 https://registry.npmjs.org/graceful-fs 95ms (cache miss)
+70 timing idealTree:node_modules/session-file-store Completed in 105ms
+71 timing idealTree:node_modules/bagpipe Completed in 0ms
+72 silly placeDep ROOT graceful-fs@4.2.11 OK for: fs-extra@8.1.0 want: ^4.2.0
+73 silly placeDep ROOT jsonfile@4.0.0 OK for: fs-extra@8.1.0 want: ^4.0.0
+74 silly placeDep ROOT universalify@0.1.2 OK for: fs-extra@8.1.0 want: ^0.1.0
+75 timing idealTree:node_modules/fs-extra Completed in 9ms
+76 timing idealTree:node_modules/graceful-fs Completed in 0ms
+77 timing idealTree:node_modules/jsonfile Completed in 0ms
+78 silly placeDep ROOT asn1.js@5.4.1 OK for: kruptein@2.2.3 want: ^5.4.1
+79 silly fetch manifest bn.js@^4.0.0
+80 silly fetch manifest minimalistic-assert@^1.0.0
+81 http fetch GET 200 https://registry.npmjs.org/minimalistic-assert 30ms (cache miss)
+82 http fetch GET 200 https://registry.npmjs.org/bn.js 39ms (cache miss)
+83 timing idealTree:node_modules/kruptein Completed in 47ms
+84 silly placeDep ROOT bn.js@4.12.0 OK for: asn1.js@5.4.1 want: ^4.0.0
+85 silly placeDep ROOT minimalistic-assert@1.0.1 OK for: asn1.js@5.4.1 want: ^1.0.0
+86 timing idealTree:node_modules/asn1.js Completed in 5ms
+87 timing idealTree:node_modules/bn.js Completed in 0ms
+88 timing idealTree:node_modules/minimalistic-assert Completed in 0ms
+89 timing idealTree:node_modules/retry Completed in 0ms
+90 timing idealTree:node_modules/universalify Completed in 0ms
+91 silly placeDep ROOT imurmurhash@0.1.4 OK for: write-file-atomic@3.0.3 want: ^0.1.4
+92 silly placeDep ROOT signal-exit@3.0.7 OK for: write-file-atomic@3.0.3 want: ^3.0.2
+93 silly placeDep ROOT typedarray-to-buffer@3.1.5 OK for: write-file-atomic@3.0.3 want: ^3.1.5
+94 timing idealTree:node_modules/write-file-atomic Completed in 4ms
+95 timing idealTree:node_modules/imurmurhash Completed in 0ms
+96 timing idealTree:node_modules/signal-exit Completed in 0ms
+97 timing idealTree:node_modules/typedarray-to-buffer Completed in 0ms
+98 timing idealTree:buildDeps Completed in 1730ms
+99 timing idealTree:fixDepFlags Completed in 2ms
+100 timing idealTree Completed in 1908ms
+101 timing reify:loadTrees Completed in 1909ms
+102 timing reify:diffTrees Completed in 5ms
+103 silly reify moves {}
+104 timing reify:retireShallow Completed in 1ms
+105 timing reify:createSparse Completed in 3ms
+106 timing reify:loadBundles Completed in 0ms
+107 silly audit bulk request {
+107 silly audit   '@types/debug': [ '4.1.8' ],
+107 silly audit   '@types/ms': [ '0.7.31' ],
+107 silly audit   '@types/node': [ '20.2.5' ],
+107 silly audit   '@types/validator': [ '13.7.17' ],
+107 silly audit   accepts: [ '1.3.8' ],
+107 silly audit   ajv: [ '6.12.6' ],
+107 silly audit   'ansi-styles': [ '4.3.0' ],
+107 silly audit   'array-flatten': [ '1.1.1' ],
+107 silly audit   asn1: [ '0.2.6' ],
+107 silly audit   'assert-plus': [ '1.0.0' ],
+107 silly audit   async: [ '3.2.4' ],
+107 silly audit   asynckit: [ '0.4.0' ],
+107 silly audit   'aws-sign2': [ '0.7.0' ],
+107 silly audit   aws4: [ '1.12.0' ],
+107 silly audit   'balanced-match': [ '1.0.2' ],
+107 silly audit   'bcrypt-pbkdf': [ '1.0.2' ],
+107 silly audit   'bignumber.js': [ '9.0.0' ],
+107 silly audit   'body-parser': [ '1.20.1' ],
+107 silly audit   'brace-expansion': [ '1.1.11', '2.0.1' ],
+107 silly audit   bytes: [ '3.1.2' ],
+107 silly audit   'call-bind': [ '1.0.2' ],
+107 silly audit   caseless: [ '0.12.0' ],
+107 silly audit   chalk: [ '4.1.2' ],
+107 silly audit   'color-convert': [ '2.0.1' ],
+107 silly audit   'color-name': [ '1.1.4' ],
+107 silly audit   'combined-stream': [ '1.0.8' ],
+107 silly audit   'concat-map': [ '0.0.1' ],
+107 silly audit   'content-disposition': [ '0.5.4' ],
+107 silly audit   'content-type': [ '1.0.5' ],
+107 silly audit   cookie: [ '0.5.0', '0.4.1', '0.4.2' ],
+107 silly audit   'cookie-parser': [ '1.4.6' ],
+107 silly audit   'cookie-signature': [ '1.0.6' ],
+107 silly audit   'core-util-is': [ '1.0.3', '1.0.2' ],
+107 silly audit   cors: [ '2.8.5' ],
+107 silly audit   dashdash: [ '1.14.1' ],
+107 silly audit   debug: [ '2.6.9', '4.3.4' ],
+107 silly audit   'delayed-stream': [ '1.0.0' ],
+107 silly audit   denque: [ '2.1.0' ],
+107 silly audit   depd: [ '2.0.0' ],
+107 silly audit   destroy: [ '1.2.0' ],
+107 silly audit   dotenv: [ '16.1.3' ],
+107 silly audit   dottie: [ '2.0.3' ],
+107 silly audit   'ecc-jsbn': [ '0.1.2' ],
+107 silly audit   'ee-first': [ '1.1.1' ],
+107 silly audit   ejs: [ '3.1.9' ],
+107 silly audit   encodeurl: [ '1.0.2' ],
+107 silly audit   'escape-html': [ '1.0.3' ],
+107 silly audit   etag: [ '1.8.1' ],
+107 silly audit   express: [ '4.18.2' ],
+107 silly audit   'express-ejs-layouts': [ '2.5.1' ],
+107 silly audit   'express-session': [ '1.17.3' ],
+107 silly audit   extend: [ '3.0.2' ],
+107 silly audit   extsprintf: [ '1.3.0' ],
+107 silly audit   'fast-deep-equal': [ '3.1.3' ],
+107 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+107 silly audit   filelist: [ '1.0.4' ],
+107 silly audit   minimatch: [ '5.1.6', '3.1.2' ],
+107 silly audit   finalhandler: [ '1.2.0' ],
+107 silly audit   'forever-agent': [ '0.6.1' ],
+107 silly audit   'form-data': [ '2.3.3' ],
+107 silly audit   forwarded: [ '0.2.0' ],
+107 silly audit   fresh: [ '0.5.2' ],
+107 silly audit   'function-bind': [ '1.1.1' ],
+107 silly audit   'generate-function': [ '2.3.1' ],
+107 silly audit   'get-intrinsic': [ '1.2.1' ],
+107 silly audit   getpass: [ '0.1.7' ],
+107 silly audit   'har-schema': [ '2.0.0' ],
+107 silly audit   'har-validator': [ '5.1.5' ],
+107 silly audit   has: [ '1.0.3' ],
+107 silly audit   'has-flag': [ '4.0.0' ],
+107 silly audit   'has-proto': [ '1.0.1' ],
+107 silly audit   'has-symbols': [ '1.0.3' ],
+107 silly audit   'http-errors': [ '2.0.0' ],
+107 silly audit   'http-signature': [ '1.2.0' ],
+107 silly audit   'iconv-lite': [ '0.4.24', '0.6.3' ],
+107 silly audit   inflection: [ '1.13.4' ],
+107 silly audit   inherits: [ '2.0.4' ],
+107 silly audit   'ipaddr.js': [ '1.9.1' ],
+107 silly audit   'is-property': [ '1.0.2' ],
+107 silly audit   'is-typedarray': [ '1.0.0' ],
+107 silly audit   isarray: [ '1.0.0' ],
+107 silly audit   isstream: [ '0.1.2' ],
+107 silly audit   jake: [ '10.8.7' ],
+107 silly audit   jsbn: [ '0.1.1' ],
+107 silly audit   'json-schema': [ '0.4.0' ],
+107 silly audit   'json-schema-traverse': [ '0.4.1' ],
+107 silly audit   'json-stringify-safe': [ '5.0.1' ],
+107 silly audit   jsprim: [ '1.4.2' ],
+107 silly audit   lodash: [ '4.17.21' ],
+107 silly audit   long: [ '5.2.3' ],
+107 silly audit   'lru-cache': [ '8.0.5', '7.18.3', '6.0.0' ],
+107 silly audit   'media-typer': [ '0.3.0' ],
+107 silly audit   'merge-descriptors': [ '1.0.1' ],
+107 silly audit   methods: [ '1.1.2' ],
+107 silly audit   mime: [ '1.6.0' ],
+107 silly audit   'mime-db': [ '1.52.0' ],
+107 silly audit   'mime-types': [ '2.1.35' ],
+107 silly audit   moment: [ '2.29.4' ],
+107 silly audit   'moment-timezone': [ '0.5.43' ],
+107 silly audit   ms: [ '2.0.0', '2.1.3', '2.1.2' ],
+107 silly audit   mysql: [ '2.18.1' ],
+107 silly audit   'safe-buffer': [ '5.1.2', '5.2.1' ],
+107 silly audit   mysql2: [ '3.3.3' ],
+107 silly audit   sqlstring: [ '2.3.3', '2.3.1' ],
+107 silly audit   'named-placeholders': [ '1.1.3' ],
+107 silly audit   negotiator: [ '0.6.3' ],
+107 silly audit   'oauth-sign': [ '0.9.0' ],
+107 silly audit   'object-assign': [ '4.1.1' ],
+107 silly audit   'object-inspect': [ '1.12.3' ],
+107 silly audit   'on-finished': [ '2.4.1' ],
+107 silly audit   'on-headers': [ '1.0.2' ],
+107 silly audit   parseurl: [ '1.3.3' ],
+107 silly audit   'path-to-regexp': [ '0.1.7' ],
+107 silly audit   'performance-now': [ '2.1.0' ],
+107 silly audit   'pg-connection-string': [ '2.6.0' ],
+107 silly audit   'process-nextick-args': [ '2.0.1' ],
+107 silly audit   'proxy-addr': [ '2.0.7' ],
+107 silly audit   psl: [ '1.9.0' ],
+107 silly audit   punycode: [ '2.3.0' ],
+107 silly audit   qs: [ '6.11.0', '6.5.3' ],
+107 silly audit   querystring: [ '0.2.1' ],
+107 silly audit   'random-bytes': [ '1.0.0' ],
+107 silly audit   'range-parser': [ '1.2.1' ],
+107 silly audit   'raw-body': [ '2.5.1' ],
+107 silly audit   'readable-stream': [ '2.3.7' ],
+107 silly audit   request: [ '2.88.2' ],
+107 silly audit   'retry-as-promised': [ '7.0.4' ],
+107 silly audit   'safer-buffer': [ '2.1.2' ],
+107 silly audit   semver: [ '7.5.1' ],
+107 silly audit   send: [ '0.18.0' ],
+107 silly audit   'seq-queue': [ '0.0.5' ],
+107 silly audit   sequelize: [ '6.31.1' ],
+107 silly audit   'sequelize-pool': [ '7.1.0' ],
+107 silly audit   uuid: [ '8.3.2', '3.4.0' ],
+107 silly audit   'serve-static': [ '1.15.0' ],
+107 silly audit   setprototypeof: [ '1.2.0' ],
+107 silly audit   'side-channel': [ '1.0.4' ],
+107 silly audit   sshpk: [ '1.17.0' ],
+107 silly audit   statuses: [ '2.0.1' ],
+107 silly audit   string_decoder: [ '1.1.1' ],
+107 silly audit   'supports-color': [ '7.2.0' ],
+107 silly audit   toidentifier: [ '1.0.1' ],
+107 silly audit   'toposort-class': [ '1.0.1' ],
+107 silly audit   'tough-cookie': [ '2.5.0' ],
+107 silly audit   'tunnel-agent': [ '0.6.0' ],
+107 silly audit   tweetnacl: [ '0.14.5' ],
+107 silly audit   'type-is': [ '1.6.18' ],
+107 silly audit   'uid-safe': [ '2.1.5' ],
+107 silly audit   unpipe: [ '1.0.0' ],
+107 silly audit   'uri-js': [ '4.4.1' ],
+107 silly audit   'util-deprecate': [ '1.0.2' ],
+107 silly audit   'utils-merge': [ '1.0.1' ],
+107 silly audit   validator: [ '13.9.0' ],
+107 silly audit   vary: [ '1.1.2' ],
+107 silly audit   verror: [ '1.10.0' ],
+107 silly audit   wkx: [ '0.5.0' ],
+107 silly audit   yallist: [ '4.0.0' ],
+107 silly audit   'session-file-store': [ '1.5.0' ],
+107 silly audit   bagpipe: [ '0.3.5' ],
+107 silly audit   'fs-extra': [ '8.1.0' ],
+107 silly audit   kruptein: [ '2.2.3' ],
+107 silly audit   retry: [ '0.12.0' ],
+107 silly audit   'write-file-atomic': [ '3.0.3' ],
+107 silly audit   'graceful-fs': [ '4.2.11' ],
+107 silly audit   jsonfile: [ '4.0.0' ],
+107 silly audit   universalify: [ '0.1.2' ],
+107 silly audit   'asn1.js': [ '5.4.1' ],
+107 silly audit   'bn.js': [ '4.12.0' ],
+107 silly audit   'minimalistic-assert': [ '1.0.1' ],
+107 silly audit   imurmurhash: [ '0.1.4' ],
+107 silly audit   'signal-exit': [ '3.0.7' ],
+107 silly audit   'typedarray-to-buffer': [ '3.1.5' ]
+107 silly audit }
+108 silly tarball no local data for typedarray-to-buffer@https://registry.npmjs.org/typedarray-to-buffer/-/typedarray-to-buffer-3.1.5.tgz. Extracting by manifest.
+109 silly tarball no local data for signal-exit@https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz. Extracting by manifest.
+110 silly tarball no local data for imurmurhash@https://registry.npmjs.org/imurmurhash/-/imurmurhash-0.1.4.tgz. Extracting by manifest.
+111 silly tarball no local data for minimalistic-assert@https://registry.npmjs.org/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz. Extracting by manifest.
+112 silly tarball no local data for bn.js@https://registry.npmjs.org/bn.js/-/bn.js-4.12.0.tgz. Extracting by manifest.
+113 silly tarball no local data for asn1.js@https://registry.npmjs.org/asn1.js/-/asn1.js-5.4.1.tgz. Extracting by manifest.
+114 silly tarball no local data for universalify@https://registry.npmjs.org/universalify/-/universalify-0.1.2.tgz. Extracting by manifest.
+115 silly tarball no local data for jsonfile@https://registry.npmjs.org/jsonfile/-/jsonfile-4.0.0.tgz. Extracting by manifest.
+116 silly tarball no local data for graceful-fs@https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz. Extracting by manifest.
+117 silly tarball no local data for write-file-atomic@https://registry.npmjs.org/write-file-atomic/-/write-file-atomic-3.0.3.tgz. Extracting by manifest.
+118 silly tarball no local data for retry@https://registry.npmjs.org/retry/-/retry-0.12.0.tgz. Extracting by manifest.
+119 silly tarball no local data for kruptein@https://registry.npmjs.org/kruptein/-/kruptein-2.2.3.tgz. Extracting by manifest.
+120 silly tarball no local data for fs-extra@https://registry.npmjs.org/fs-extra/-/fs-extra-8.1.0.tgz. Extracting by manifest.
+121 silly tarball no local data for bagpipe@https://registry.npmjs.org/bagpipe/-/bagpipe-0.3.5.tgz. Extracting by manifest.
+122 silly tarball no local data for session-file-store@https://registry.npmjs.org/session-file-store/-/session-file-store-1.5.0.tgz. Extracting by manifest.
+123 http fetch GET 200 https://registry.npmjs.org/typedarray-to-buffer/-/typedarray-to-buffer-3.1.5.tgz 152ms (cache miss)
+124 http fetch GET 200 https://registry.npmjs.org/imurmurhash/-/imurmurhash-0.1.4.tgz 153ms (cache miss)
+125 timing reifyNode:node_modules/imurmurhash Completed in 174ms
+126 timing reifyNode:node_modules/typedarray-to-buffer Completed in 175ms
+127 http fetch GET 200 https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz 157ms (cache miss)
+128 timing reifyNode:node_modules/signal-exit Completed in 177ms
+129 http fetch GET 200 https://registry.npmjs.org/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz 155ms (cache miss)
+130 timing reifyNode:node_modules/minimalistic-assert Completed in 178ms
+131 http fetch GET 200 https://registry.npmjs.org/bn.js/-/bn.js-4.12.0.tgz 166ms (cache miss)
+132 timing reifyNode:node_modules/bn.js Completed in 190ms
+133 http fetch GET 200 https://registry.npmjs.org/universalify/-/universalify-0.1.2.tgz 168ms (cache miss)
+134 timing reifyNode:node_modules/universalify Completed in 196ms
+135 http fetch GET 200 https://registry.npmjs.org/write-file-atomic/-/write-file-atomic-3.0.3.tgz 172ms (cache miss)
+136 timing reifyNode:node_modules/write-file-atomic Completed in 205ms
+137 http fetch GET 200 https://registry.npmjs.org/session-file-store/-/session-file-store-1.5.0.tgz 160ms (cache miss)
+138 timing reifyNode:node_modules/session-file-store Completed in 206ms
+139 http fetch GET 200 https://registry.npmjs.org/jsonfile/-/jsonfile-4.0.0.tgz 183ms (cache miss)
+140 timing reifyNode:node_modules/jsonfile Completed in 213ms
+141 http fetch GET 200 https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz 183ms (cache miss)
+142 timing reifyNode:node_modules/graceful-fs Completed in 214ms
+143 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 220ms
+144 timing auditReport:getReport Completed in 225ms
+145 silly audit report {
+145 silly audit report   request: [
+145 silly audit report     {
+145 silly audit report       id: 1091725,
+145 silly audit report       url: 'https://github.com/advisories/GHSA-p8p7-x288-28g6',
+145 silly audit report       title: 'Server-Side Request Forgery in Request',
+145 silly audit report       severity: 'moderate',
+145 silly audit report       vulnerable_versions: '<=2.88.2',
+145 silly audit report       cwe: [Array],
+145 silly audit report       cvss: [Object]
+145 silly audit report     }
+145 silly audit report   ]
+145 silly audit report }
+146 http fetch GET 200 https://registry.npmjs.org/bagpipe/-/bagpipe-0.3.5.tgz 183ms (cache miss)
+147 timing reifyNode:node_modules/bagpipe Completed in 223ms
+148 http fetch GET 200 https://registry.npmjs.org/asn1.js/-/asn1.js-5.4.1.tgz 202ms (cache miss)
+149 http fetch GET 200 https://registry.npmjs.org/kruptein/-/kruptein-2.2.3.tgz 193ms (cache miss)
+150 timing reifyNode:node_modules/kruptein Completed in 229ms
+151 timing metavuln:cache:get:security-advisory:request:FnfdbROYvhIvLXlyoCxSSx8bViC9ql5CpEoHBRMANr9SovQth2yAv4XvirMLy/Xm27LclHTb7yVYR3nh2lzexQ== Completed in 13ms
+152 http fetch GET 200 https://registry.npmjs.org/retry/-/retry-0.12.0.tgz 195ms (cache miss)
+153 timing reifyNode:node_modules/asn1.js Completed in 231ms
+154 timing reifyNode:node_modules/retry Completed in 232ms
+155 http fetch GET 200 https://registry.npmjs.org/request 21ms (cache hit)
+156 timing metavuln:packument:request Completed in 24ms
+157 timing metavuln:load:security-advisory:request:1091725 Completed in 1ms
+158 timing metavuln:calculate:security-advisory:request:1091725 Completed in 27ms
+159 timing auditReport:init Completed in 55ms
+160 timing reify:audit Completed in 281ms
+161 http fetch GET 200 https://registry.npmjs.org/fs-extra/-/fs-extra-8.1.0.tgz 255ms (cache miss)
+162 timing reifyNode:node_modules/fs-extra Completed in 293ms
+163 timing reify:unpack Completed in 295ms
+164 timing reify:unretire Completed in 0ms
+165 timing build:queue Completed in 1ms
+166 timing build:deps Completed in 2ms
+167 timing build Completed in 2ms
+168 timing reify:build Completed in 3ms
+169 timing reify:trash Completed in 0ms
+170 timing reify:save Completed in 52ms
+171 timing reify Completed in 2342ms
+172 silly ADD node_modules/typedarray-to-buffer
+173 silly ADD node_modules/signal-exit
+174 silly ADD node_modules/imurmurhash
+175 silly ADD node_modules/minimalistic-assert
+176 silly ADD node_modules/bn.js
+177 silly ADD node_modules/asn1.js
+178 silly ADD node_modules/universalify
+179 silly ADD node_modules/jsonfile
+180 silly ADD node_modules/graceful-fs
+181 silly ADD node_modules/write-file-atomic
+182 silly ADD node_modules/retry
+183 silly ADD node_modules/kruptein
+184 silly ADD node_modules/fs-extra
+185 silly ADD node_modules/bagpipe
+186 silly ADD node_modules/session-file-store
+187 timing command:install Completed in 2354ms
+188 verbose exit 0
+189 timing npm Completed in 2388ms
+190 info ok

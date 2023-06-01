@@ -1,0 +1,385 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@9.5.1
+2 info using node@v18.16.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 0ms
+10 timing config:load:file:/home/happyeunnn11/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 1ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 8ms
+16 timing npm:load:configload Completed in 8ms
+17 timing npm:load:mkdirpcache Completed in 1ms
+18 timing npm:load:mkdirplogs Completed in 0ms
+19 verbose title npm install socket.io
+20 verbose argv "install" "socket.io" "--save"
+21 timing npm:load:setTitle Completed in 1ms
+22 timing config:load:flatten Completed in 3ms
+23 timing npm:load:display Completed in 4ms
+24 verbose logfile logs-max:10 dir:/home/happyeunnn11/.npm/_logs/2023-06-01T09_55_45_657Z-
+25 verbose logfile /home/happyeunnn11/.npm/_logs/2023-06-01T09_55_45_657Z-debug-0.log
+26 timing npm:load:logFile Completed in 5ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 20ms
+30 timing arborist:ctor Completed in 1ms
+31 silly logfile start cleaning logs, removing 1 files
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 171ms
+34 timing idealTree:userRequests Completed in 3ms
+35 silly idealTree buildDeps
+36 silly fetch manifest socket.io@*
+37 timing arborist:ctor Completed in 0ms
+38 http fetch GET 200 https://registry.npmjs.org/socket.io 219ms (cache miss)
+39 silly placeDep ROOT socket.io@4.6.2 OK for: happyeunnn11@1.0.0 want: *
+40 silly fetch manifest base64id@~2.0.0
+41 silly fetch manifest debug@~4.3.2
+42 silly fetch manifest engine.io@~6.4.2
+43 silly fetch manifest socket.io-adapter@~2.5.2
+44 silly fetch manifest socket.io-parser@~4.2.4
+45 http fetch GET 200 https://registry.npmjs.org/debug 23ms (cache hit)
+46 http fetch GET 200 https://registry.npmjs.org/base64id 40ms (cache miss)
+47 http fetch GET 200 https://registry.npmjs.org/socket.io-parser 68ms (cache miss)
+48 http fetch GET 200 https://registry.npmjs.org/engine.io 81ms (cache miss)
+49 http fetch GET 200 https://registry.npmjs.org/socket.io-adapter 86ms (cache miss)
+50 timing idealTree:#root Completed in 319ms
+51 silly placeDep ROOT base64id@2.0.0 OK for: socket.io@4.6.2 want: ~2.0.0
+52 silly placeDep node_modules/socket.io debug@4.3.4 OK for: socket.io@4.6.2 want: ~4.3.2
+53 silly placeDep ROOT engine.io@6.4.2 OK for: socket.io@4.6.2 want: ~6.4.2
+54 silly placeDep ROOT socket.io-adapter@2.5.2 OK for: socket.io@4.6.2 want: ~2.5.2
+55 silly placeDep ROOT socket.io-parser@4.2.4 OK for: socket.io@4.6.2 want: ~4.2.4
+56 silly fetch manifest ms@2.1.2
+57 silly fetch manifest @types/cookie@^0.4.1
+58 silly fetch manifest @types/cors@^2.8.12
+59 silly fetch manifest cookie@~0.4.1
+60 silly fetch manifest debug@~4.3.1
+61 silly fetch manifest engine.io-parser@~5.0.3
+62 silly fetch manifest ws@~8.11.0
+63 silly fetch manifest @socket.io/component-emitter@~3.1.0
+64 http fetch GET 200 https://registry.npmjs.org/ms 18ms (cache hit)
+65 http fetch GET 200 https://registry.npmjs.org/cookie 17ms (cache hit)
+66 http fetch GET 200 https://registry.npmjs.org/engine.io-parser 41ms (cache miss)
+67 http fetch GET 200 https://registry.npmjs.org/@types%2fcookie 71ms (cache miss)
+68 http fetch GET 200 https://registry.npmjs.org/@socket.io%2fcomponent-emitter 339ms (cache miss)
+69 http fetch GET 200 https://registry.npmjs.org/ws 700ms (cache miss)
+70 http fetch GET 200 https://registry.npmjs.org/@types%2fcors 932ms (cache miss)
+71 timing idealTree:node_modules/socket.io Completed in 945ms
+72 timing idealTree:node_modules/base64id Completed in 0ms
+73 silly fetch manifest bufferutil@^4.0.1
+74 http fetch GET 200 https://registry.npmjs.org/bufferutil 38ms (cache miss)
+75 silly fetch manifest utf-8-validate@^5.0.2
+76 http fetch GET 200 https://registry.npmjs.org/utf-8-validate 37ms (cache miss)
+77 silly placeDep ROOT @types/cookie@0.4.1 OK for: engine.io@6.4.2 want: ^0.4.1
+78 silly placeDep ROOT @types/cors@2.8.13 OK for: engine.io@6.4.2 want: ^2.8.12
+79 silly placeDep node_modules/engine.io cookie@0.4.2 OK for: engine.io@6.4.2 want: ~0.4.1
+80 silly placeDep node_modules/engine.io debug@4.3.4 OK for: engine.io@6.4.2 want: ~4.3.1
+81 silly placeDep ROOT engine.io-parser@5.0.7 OK for: engine.io@6.4.2 want: ~5.0.3
+82 silly placeDep ROOT ws@8.11.0 OK for: engine.io@6.4.2 want: ~8.11.0
+83 timing idealTree:node_modules/engine.io Completed in 91ms
+84 timing idealTree:node_modules/@types/cookie Completed in 0ms
+85 timing idealTree:node_modules/@types/cors Completed in 0ms
+86 timing idealTree:node_modules/engine.io-parser Completed in 0ms
+87 timing idealTree:node_modules/socket.io-adapter Completed in 0ms
+88 silly placeDep ROOT @socket.io/component-emitter@3.1.0 OK for: socket.io-parser@4.2.4 want: ~3.1.0
+89 silly placeDep node_modules/socket.io-parser debug@4.3.4 OK for: socket.io-parser@4.2.4 want: ~4.3.1
+90 timing idealTree:node_modules/socket.io-parser Completed in 7ms
+91 timing idealTree:node_modules/@socket.io/component-emitter Completed in 0ms
+92 timing idealTree:node_modules/ws Completed in 0ms
+93 timing idealTree:node_modules/engine.io/node_modules/cookie Completed in 0ms
+94 silly placeDep node_modules/engine.io ms@2.1.2 OK for: debug@4.3.4 want: 2.1.2
+95 timing idealTree:node_modules/engine.io/node_modules/debug Completed in 2ms
+96 timing idealTree:node_modules/engine.io/node_modules/ms Completed in 0ms
+97 silly placeDep node_modules/socket.io-parser ms@2.1.2 OK for: debug@4.3.4 want: 2.1.2
+98 timing idealTree:node_modules/socket.io-parser/node_modules/debug Completed in 2ms
+99 timing idealTree:node_modules/socket.io-parser/node_modules/ms Completed in 0ms
+100 silly placeDep node_modules/socket.io ms@2.1.2 OK for: debug@4.3.4 want: 2.1.2
+101 timing idealTree:node_modules/socket.io/node_modules/debug Completed in 2ms
+102 timing idealTree:node_modules/socket.io/node_modules/ms Completed in 0ms
+103 timing idealTree:buildDeps Completed in 1370ms
+104 timing idealTree:fixDepFlags Completed in 4ms
+105 timing idealTree Completed in 1553ms
+106 timing reify:loadTrees Completed in 1554ms
+107 timing reify:diffTrees Completed in 6ms
+108 silly reify moves {}
+109 timing reify:retireShallow Completed in 1ms
+110 timing reify:createSparse Completed in 5ms
+111 timing reify:loadBundles Completed in 0ms
+112 silly audit bulk request {
+112 silly audit   '@types/debug': [ '4.1.8' ],
+112 silly audit   '@types/ms': [ '0.7.31' ],
+112 silly audit   '@types/node': [ '20.2.5' ],
+112 silly audit   '@types/validator': [ '13.7.17' ],
+112 silly audit   accepts: [ '1.3.8' ],
+112 silly audit   ajv: [ '6.12.6' ],
+112 silly audit   'ansi-styles': [ '4.3.0' ],
+112 silly audit   'array-flatten': [ '1.1.1' ],
+112 silly audit   asn1: [ '0.2.6' ],
+112 silly audit   'asn1.js': [ '5.4.1' ],
+112 silly audit   'assert-plus': [ '1.0.0' ],
+112 silly audit   async: [ '3.2.4' ],
+112 silly audit   asynckit: [ '0.4.0' ],
+112 silly audit   'aws-sign2': [ '0.7.0' ],
+112 silly audit   aws4: [ '1.12.0' ],
+112 silly audit   bagpipe: [ '0.3.5' ],
+112 silly audit   'balanced-match': [ '1.0.2' ],
+112 silly audit   'bcrypt-pbkdf': [ '1.0.2' ],
+112 silly audit   'bignumber.js': [ '9.0.0' ],
+112 silly audit   'bn.js': [ '4.12.0' ],
+112 silly audit   'body-parser': [ '1.20.1' ],
+112 silly audit   'brace-expansion': [ '1.1.11', '2.0.1' ],
+112 silly audit   bytes: [ '3.1.2' ],
+112 silly audit   'call-bind': [ '1.0.2' ],
+112 silly audit   caseless: [ '0.12.0' ],
+112 silly audit   chalk: [ '4.1.2' ],
+112 silly audit   'color-convert': [ '2.0.1' ],
+112 silly audit   'color-name': [ '1.1.4' ],
+112 silly audit   'combined-stream': [ '1.0.8' ],
+112 silly audit   'concat-map': [ '0.0.1' ],
+112 silly audit   'content-disposition': [ '0.5.4' ],
+112 silly audit   'content-type': [ '1.0.5' ],
+112 silly audit   cookie: [ '0.5.0', '0.4.1', '0.4.2' ],
+112 silly audit   'cookie-parser': [ '1.4.6' ],
+112 silly audit   'cookie-signature': [ '1.0.6' ],
+112 silly audit   'core-util-is': [ '1.0.3', '1.0.2' ],
+112 silly audit   cors: [ '2.8.5' ],
+112 silly audit   dashdash: [ '1.14.1' ],
+112 silly audit   debug: [ '2.6.9', '4.3.4' ],
+112 silly audit   'delayed-stream': [ '1.0.0' ],
+112 silly audit   denque: [ '2.1.0' ],
+112 silly audit   depd: [ '2.0.0' ],
+112 silly audit   destroy: [ '1.2.0' ],
+112 silly audit   dotenv: [ '16.1.3' ],
+112 silly audit   dottie: [ '2.0.3' ],
+112 silly audit   'ecc-jsbn': [ '0.1.2' ],
+112 silly audit   'ee-first': [ '1.1.1' ],
+112 silly audit   ejs: [ '3.1.9' ],
+112 silly audit   encodeurl: [ '1.0.2' ],
+112 silly audit   'escape-html': [ '1.0.3' ],
+112 silly audit   etag: [ '1.8.1' ],
+112 silly audit   express: [ '4.18.2' ],
+112 silly audit   'express-ejs-layouts': [ '2.5.1' ],
+112 silly audit   'express-session': [ '1.17.3' ],
+112 silly audit   extend: [ '3.0.2' ],
+112 silly audit   extsprintf: [ '1.3.0' ],
+112 silly audit   'fast-deep-equal': [ '3.1.3' ],
+112 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+112 silly audit   filelist: [ '1.0.4' ],
+112 silly audit   minimatch: [ '5.1.6', '3.1.2' ],
+112 silly audit   finalhandler: [ '1.2.0' ],
+112 silly audit   'forever-agent': [ '0.6.1' ],
+112 silly audit   'form-data': [ '2.3.3' ],
+112 silly audit   forwarded: [ '0.2.0' ],
+112 silly audit   fresh: [ '0.5.2' ],
+112 silly audit   'fs-extra': [ '8.1.0' ],
+112 silly audit   'function-bind': [ '1.1.1' ],
+112 silly audit   'generate-function': [ '2.3.1' ],
+112 silly audit   'get-intrinsic': [ '1.2.1' ],
+112 silly audit   getpass: [ '0.1.7' ],
+112 silly audit   'graceful-fs': [ '4.2.11' ],
+112 silly audit   'har-schema': [ '2.0.0' ],
+112 silly audit   'har-validator': [ '5.1.5' ],
+112 silly audit   has: [ '1.0.3' ],
+112 silly audit   'has-flag': [ '4.0.0' ],
+112 silly audit   'has-proto': [ '1.0.1' ],
+112 silly audit   'has-symbols': [ '1.0.3' ],
+112 silly audit   'http-errors': [ '2.0.0' ],
+112 silly audit   'http-signature': [ '1.2.0' ],
+112 silly audit   'iconv-lite': [ '0.4.24', '0.6.3' ],
+112 silly audit   imurmurhash: [ '0.1.4' ],
+112 silly audit   inflection: [ '1.13.4' ],
+112 silly audit   inherits: [ '2.0.4' ],
+112 silly audit   'ipaddr.js': [ '1.9.1' ],
+112 silly audit   'is-property': [ '1.0.2' ],
+112 silly audit   'is-typedarray': [ '1.0.0' ],
+112 silly audit   isarray: [ '1.0.0' ],
+112 silly audit   isstream: [ '0.1.2' ],
+112 silly audit   jake: [ '10.8.7' ],
+112 silly audit   jsbn: [ '0.1.1' ],
+112 silly audit   'json-schema': [ '0.4.0' ],
+112 silly audit   'json-schema-traverse': [ '0.4.1' ],
+112 silly audit   'json-stringify-safe': [ '5.0.1' ],
+112 silly audit   jsonfile: [ '4.0.0' ],
+112 silly audit   jsprim: [ '1.4.2' ],
+112 silly audit   kruptein: [ '2.2.3' ],
+112 silly audit   lodash: [ '4.17.21' ],
+112 silly audit   long: [ '5.2.3' ],
+112 silly audit   'lru-cache': [ '8.0.5', '7.18.3', '6.0.0' ],
+112 silly audit   'media-typer': [ '0.3.0' ],
+112 silly audit   'merge-descriptors': [ '1.0.1' ],
+112 silly audit   methods: [ '1.1.2' ],
+112 silly audit   mime: [ '1.6.0' ],
+112 silly audit   'mime-db': [ '1.52.0' ],
+112 silly audit   'mime-types': [ '2.1.35' ],
+112 silly audit   'minimalistic-assert': [ '1.0.1' ],
+112 silly audit   moment: [ '2.29.4' ],
+112 silly audit   'moment-timezone': [ '0.5.43' ],
+112 silly audit   ms: [ '2.0.0', '2.1.3', '2.1.2' ],
+112 silly audit   mysql: [ '2.18.1' ],
+112 silly audit   'safe-buffer': [ '5.1.2', '5.2.1' ],
+112 silly audit   mysql2: [ '3.3.3' ],
+112 silly audit   sqlstring: [ '2.3.3', '2.3.1' ],
+112 silly audit   'named-placeholders': [ '1.1.3' ],
+112 silly audit   negotiator: [ '0.6.3' ],
+112 silly audit   'oauth-sign': [ '0.9.0' ],
+112 silly audit   'object-assign': [ '4.1.1' ],
+112 silly audit   'object-inspect': [ '1.12.3' ],
+112 silly audit   'on-finished': [ '2.4.1' ],
+112 silly audit   'on-headers': [ '1.0.2' ],
+112 silly audit   parseurl: [ '1.3.3' ],
+112 silly audit   'path-to-regexp': [ '0.1.7' ],
+112 silly audit   'performance-now': [ '2.1.0' ],
+112 silly audit   'pg-connection-string': [ '2.6.0' ],
+112 silly audit   'process-nextick-args': [ '2.0.1' ],
+112 silly audit   'proxy-addr': [ '2.0.7' ],
+112 silly audit   psl: [ '1.9.0' ],
+112 silly audit   punycode: [ '2.3.0' ],
+112 silly audit   qs: [ '6.11.0', '6.5.3' ],
+112 silly audit   querystring: [ '0.2.1' ],
+112 silly audit   'random-bytes': [ '1.0.0' ],
+112 silly audit   'range-parser': [ '1.2.1' ],
+112 silly audit   'raw-body': [ '2.5.1' ],
+112 silly audit   'readable-stream': [ '2.3.7' ],
+112 silly audit   request: [ '2.88.2' ],
+112 silly audit   retry: [ '0.12.0' ],
+112 silly audit   'retry-as-promised': [ '7.0.4' ],
+112 silly audit   'safer-buffer': [ '2.1.2' ],
+112 silly audit   semver: [ '7.5.1' ],
+112 silly audit   send: [ '0.18.0' ],
+112 silly audit   'seq-queue': [ '0.0.5' ],
+112 silly audit   sequelize: [ '6.31.1' ],
+112 silly audit   'sequelize-pool': [ '7.1.0' ],
+112 silly audit   uuid: [ '8.3.2', '3.4.0' ],
+112 silly audit   'serve-static': [ '1.15.0' ],
+112 silly audit   'session-file-store': [ '1.5.0' ],
+112 silly audit   setprototypeof: [ '1.2.0' ],
+112 silly audit   'side-channel': [ '1.0.4' ],
+112 silly audit   'signal-exit': [ '3.0.7' ],
+112 silly audit   sshpk: [ '1.17.0' ],
+112 silly audit   statuses: [ '2.0.1' ],
+112 silly audit   string_decoder: [ '1.1.1' ],
+112 silly audit   'supports-color': [ '7.2.0' ],
+112 silly audit   toidentifier: [ '1.0.1' ],
+112 silly audit   'toposort-class': [ '1.0.1' ],
+112 silly audit   'tough-cookie': [ '2.5.0' ],
+112 silly audit   'tunnel-agent': [ '0.6.0' ],
+112 silly audit   tweetnacl: [ '0.14.5' ],
+112 silly audit   'type-is': [ '1.6.18' ],
+112 silly audit   'typedarray-to-buffer': [ '3.1.5' ],
+112 silly audit   'uid-safe': [ '2.1.5' ],
+112 silly audit   universalify: [ '0.1.2' ],
+112 silly audit   unpipe: [ '1.0.0' ],
+112 silly audit   'uri-js': [ '4.4.1' ],
+112 silly audit   'util-deprecate': [ '1.0.2' ],
+112 silly audit   'utils-merge': [ '1.0.1' ],
+112 silly audit   validator: [ '13.9.0' ],
+112 silly audit   vary: [ '1.1.2' ],
+112 silly audit   verror: [ '1.10.0' ],
+112 silly audit   wkx: [ '0.5.0' ],
+112 silly audit   'write-file-atomic': [ '3.0.3' ],
+112 silly audit   yallist: [ '4.0.0' ],
+112 silly audit   'socket.io': [ '4.6.2' ],
+112 silly audit   base64id: [ '2.0.0' ],
+112 silly audit   'engine.io': [ '6.4.2' ],
+112 silly audit   'socket.io-adapter': [ '2.5.2' ],
+112 silly audit   'socket.io-parser': [ '4.2.4' ],
+112 silly audit   '@types/cookie': [ '0.4.1' ],
+112 silly audit   '@types/cors': [ '2.8.13' ],
+112 silly audit   'engine.io-parser': [ '5.0.7' ],
+112 silly audit   ws: [ '8.11.0' ],
+112 silly audit   '@socket.io/component-emitter': [ '3.1.0' ]
+112 silly audit }
+113 silly tarball no local data for @socket.io/component-emitter@https://registry.npmjs.org/@socket.io/component-emitter/-/component-emitter-3.1.0.tgz. Extracting by manifest.
+114 silly tarball no local data for ws@https://registry.npmjs.org/ws/-/ws-8.11.0.tgz. Extracting by manifest.
+115 silly tarball no local data for engine.io-parser@https://registry.npmjs.org/engine.io-parser/-/engine.io-parser-5.0.7.tgz. Extracting by manifest.
+116 silly tarball no local data for @types/cors@https://registry.npmjs.org/@types/cors/-/cors-2.8.13.tgz. Extracting by manifest.
+117 silly tarball no local data for @types/cookie@https://registry.npmjs.org/@types/cookie/-/cookie-0.4.1.tgz. Extracting by manifest.
+118 silly tarball no local data for socket.io-parser@https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-4.2.4.tgz. Extracting by manifest.
+119 silly tarball no local data for socket.io-adapter@https://registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-2.5.2.tgz. Extracting by manifest.
+120 silly tarball no local data for engine.io@https://registry.npmjs.org/engine.io/-/engine.io-6.4.2.tgz. Extracting by manifest.
+121 silly tarball no local data for base64id@https://registry.npmjs.org/base64id/-/base64id-2.0.0.tgz. Extracting by manifest.
+122 silly tarball no local data for socket.io@https://registry.npmjs.org/socket.io/-/socket.io-4.6.2.tgz. Extracting by manifest.
+123 timing reifyNode:node_modules/socket.io-parser/node_modules/ms Completed in 132ms
+124 timing reifyNode:node_modules/engine.io/node_modules/ms Completed in 132ms
+125 timing reifyNode:node_modules/socket.io/node_modules/ms Completed in 132ms
+126 timing reifyNode:node_modules/engine.io/node_modules/cookie Completed in 150ms
+127 http fetch GET 200 https://registry.npmjs.org/@types/cors/-/cors-2.8.13.tgz 137ms (cache miss)
+128 timing reifyNode:node_modules/@types/cors Completed in 161ms
+129 timing reifyNode:node_modules/socket.io-parser/node_modules/debug Completed in 164ms
+130 timing reifyNode:node_modules/engine.io/node_modules/debug Completed in 163ms
+131 timing reifyNode:node_modules/socket.io/node_modules/debug Completed in 163ms
+132 http fetch GET 200 https://registry.npmjs.org/@socket.io/component-emitter/-/component-emitter-3.1.0.tgz 147ms (cache miss)
+133 timing reifyNode:node_modules/@socket.io/component-emitter Completed in 168ms
+134 http fetch GET 200 https://registry.npmjs.org/base64id/-/base64id-2.0.0.tgz 142ms (cache miss)
+135 timing reifyNode:node_modules/base64id Completed in 180ms
+136 http fetch GET 200 https://registry.npmjs.org/@types/cookie/-/cookie-0.4.1.tgz 159ms (cache miss)
+137 timing reifyNode:node_modules/@types/cookie Completed in 186ms
+138 http fetch GET 200 https://registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-2.5.2.tgz 160ms (cache miss)
+139 timing reifyNode:node_modules/socket.io-adapter Completed in 190ms
+140 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 223ms
+141 timing auditReport:getReport Completed in 229ms
+142 silly audit report {
+142 silly audit report   request: [
+142 silly audit report     {
+142 silly audit report       id: 1091725,
+142 silly audit report       url: 'https://github.com/advisories/GHSA-p8p7-x288-28g6',
+142 silly audit report       title: 'Server-Side Request Forgery in Request',
+142 silly audit report       severity: 'moderate',
+142 silly audit report       vulnerable_versions: '<=2.88.2',
+142 silly audit report       cwe: [Array],
+142 silly audit report       cvss: [Object]
+142 silly audit report     }
+142 silly audit report   ]
+142 silly audit report }
+143 http fetch GET 200 https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-4.2.4.tgz 203ms (cache miss)
+144 timing metavuln:cache:get:security-advisory:request:FnfdbROYvhIvLXlyoCxSSx8bViC9ql5CpEoHBRMANr9SovQth2yAv4XvirMLy/Xm27LclHTb7yVYR3nh2lzexQ== Completed in 15ms
+145 timing reifyNode:node_modules/socket.io-parser Completed in 235ms
+146 http fetch GET 200 https://registry.npmjs.org/engine.io-parser/-/engine.io-parser-5.0.7.tgz 218ms (cache miss)
+147 timing reifyNode:node_modules/engine.io-parser Completed in 247ms
+148 http fetch GET 200 https://registry.npmjs.org/request 25ms (cache hit)
+149 timing metavuln:packument:request Completed in 28ms
+150 timing metavuln:load:security-advisory:request:1091725 Completed in 2ms
+151 timing metavuln:calculate:security-advisory:request:1091725 Completed in 30ms
+152 timing auditReport:init Completed in 60ms
+153 timing reify:audit Completed in 289ms
+154 http fetch GET 200 https://registry.npmjs.org/ws/-/ws-8.11.0.tgz 258ms (cache miss)
+155 timing reifyNode:node_modules/ws Completed in 280ms
+156 http fetch GET 200 https://registry.npmjs.org/engine.io/-/engine.io-6.4.2.tgz 264ms (cache miss)
+157 timing reifyNode:node_modules/engine.io Completed in 296ms
+158 http fetch GET 200 https://registry.npmjs.org/socket.io/-/socket.io-4.6.2.tgz 282ms (cache miss)
+159 timing reifyNode:node_modules/socket.io Completed in 322ms
+160 timing reify:unpack Completed in 324ms
+161 timing reify:unretire Completed in 0ms
+162 timing build:queue Completed in 1ms
+163 timing build:deps Completed in 2ms
+164 timing build Completed in 2ms
+165 timing reify:build Completed in 3ms
+166 timing reify:trash Completed in 0ms
+167 timing reify:save Completed in 56ms
+168 timing reify Completed in 2001ms
+169 silly ADD node_modules/@socket.io/component-emitter
+170 silly ADD node_modules/ws
+171 silly ADD node_modules/engine.io-parser
+172 silly ADD node_modules/@types/cors
+173 silly ADD node_modules/@types/cookie
+174 silly ADD node_modules/socket.io-parser
+175 silly ADD node_modules/socket.io-parser/node_modules/ms
+176 silly ADD node_modules/socket.io-parser/node_modules/debug
+177 silly ADD node_modules/socket.io-adapter
+178 silly ADD node_modules/engine.io
+179 silly ADD node_modules/engine.io/node_modules/ms
+180 silly ADD node_modules/engine.io/node_modules/debug
+181 silly ADD node_modules/engine.io/node_modules/cookie
+182 silly ADD node_modules/base64id
+183 silly ADD node_modules/socket.io
+184 silly ADD node_modules/socket.io/node_modules/ms
+185 silly ADD node_modules/socket.io/node_modules/debug
+186 timing command:install Completed in 2014ms
+187 verbose exit 0
+188 timing npm Completed in 2047ms
+189 info ok
