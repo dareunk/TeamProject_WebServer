@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+</head>
+<body>
+  <h1>Tracks</h1>
+  <div class="tracks-container">
+	  <% tracks.forEach( function( track, index){ %>
+      <div class="tracks-item">
+        <a href="/searching/<%= track.id %>" class="track-link">
+          <img src="<%= track.album.images[0].url %>" alt="track Image" class="track-image">
+          <div class="track-name"><%= track.name %></div>
+          <div class="artist-name"><%=track.artists[0].name %><div>
+	 <audio controls>
+                <source src="<%= track.preview_url %>" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+	</a>
+      
+      </div>
+      <% }); %>
+
+  </div>
+  <div>
+      <ul>
+	      <!-- <li><a href="/plimatelist">playlist</a></li> -->
+      </ul>
+    </div>
+</body>
+</html>

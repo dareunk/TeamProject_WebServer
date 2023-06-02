@@ -33,7 +33,7 @@ const io = socket(server);
 const SpotifyWebApi = require('spotify-web-api-node');
 const client_id = '44593f8f0123478194b49d77f6b85f4f'; // Your client id
 const client_secret = 'eebbe9ab51264c24bbb0bde430b5027d'; // Your secret
-const redirect_uri = 'http://34.64.209.201/callback'; // Your redirect uri
+const redirect_uri = 'http://34.22.71.11/callback'; // Your redirect uri
 const spotifyApi = new SpotifyWebApi({
     clientId: client_id,
     clientSecret: client_secret,
@@ -327,7 +327,7 @@ app.get('/noLink', (req,res)=>{
 // 이 파일 옮길 때 아래 sendFile 경로 바꿔줘야함
 app.get('/socketio', (req, res)=>{
     console.log('chat');
-    fs.readFile('./public/index.html',(err, data)=>{
+    fs.readFile('./public/chatroom.html',(err, data)=>{
     if(err) {
         res.send('에러')
     } else {
@@ -424,13 +424,47 @@ app.get('/playlists', async (req,res)=>{
     try {
         // Spotify Web API를 사용해서 플레이리스트 목록 가져오기
         const playlists = await spotifyApi.getUserPlaylists();
-        //console.log(playlists);
+       // console.log(playlists);
         //console.log(playlists.body.items)
         res.render('playlists', { playlists });
     } catch (error) {
         console.error('Error retrieving playlists:', error);
         res.status(500).json({ error: 'Failed to retrieve playlists' });
     }
+});
+
+app.get('/searchsong', async (req,res) => {
+	console.log("searching");
+	res.render('searchBar');
+});
+
+app.post('/searching', async(req,res)=>{
+	const body = req.body;
+	const obj = body.search;
+
+	spotifyApi.searchTracks(obj).then(function(data){
+	        const tracks = data.body.tracks.items;
+		console.log(tracks);
+		console.log(`Search track by ${obj} in tracks`);
+		res.render('search', { tracks: tracks });
+	}
+		,function(err){
+			console.log("something went wrong!",err);
+		});
+});
+app.post('/searchingPli', async(req,res)=>{
+	const body = req.body;
+	const obj = body.searchPli;
+	//console.log(obj);
+
+	spotifyApi.searchPlaylists(obj).then(function(data){
+	const playlists = data.body.playlists.items;
+		console.log(playlists);
+		console.log(`Search playlist by ${obj} in playlists`);
+		res.render('findPli',{ playlists});	
+	}, function(err){
+		console.log("something went wrong!",err);
+	});
 });
 
 server.listen(80,() => {

@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Playlists</title>
-  <style>
+	  <style>
     body {
       font-family: Arial, sans-serif;
     }
@@ -39,27 +37,21 @@
   </style>
 </head>
 <body>
-  <h1>Playlists</h1>
-   <form action='/searchingPli' method='post'>
-          <input type="text" name="searchPli" value="">
-          <input type="submit" class="button" value="search">
-          </form>
-  <div class="playlist-container">
-
-    <% playlists.body.items.reverse().forEach(function(playlist) { %>
-      <div class="playlist-item">
+	<h1><% playlists.forEach(function(playlist){%>
+	 <div class="playlists-item">
         <a href="/playlist/<%= playlist.id %>" class="playlist-link">
-          <img src="<%= playlist.images[0].url %>" alt="Playlist Image" class="playlist-image">
+          <img src="<%= playlist.images[0].url %>" alt="playlist Image" class="playlist-image">
           <div class="playlist-name"><%= playlist.name %></div>
         </a>
+
       </div>
-    <% }); %>
+      <% }); %>
+
   </div>
   <div>
       <ul>
-        <li><a href="/plimatelist">playlist</a></li>
+              <!-- <li><a href="/plimatelist">playlist</a></li> -->
       </ul>
     </div>
 </body>
 </html>
-
