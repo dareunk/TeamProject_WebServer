@@ -3,13 +3,61 @@
 <head>
 <meta charset="utf-8">
 <title>search</title>
+<style>
+    body{
+
+        background-color: #24222C;
+    }
+    
+    #search {
+        display: inline-flex;
+        width: 600px;
+        height: 30px;
+
+        background: #D9D9D9;
+        border-radius: 20px;
+
+    }
+
+    #box{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+    }
+    #btn{
+        display:inline-flex;
+        position: sticky;
+        width: 30px;
+        height: 30px;
+
+        border-color: #D9D9D9;
+        border-radius: 20px;
+
+        background: #D9D9D9;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        color: #000000;     
+    }
+
+
+
+</style>
 </head>
-<body>
-<h1>Search</h1>
-<form action="/searching/<%= playlistId %>" method="post">
-<input type="text" name="search" value="">
-<input class="button" type="submit" value="search">
-</form>
+<body >
+    <h1 style=" color: #ffffff; text-align: center;">Search</h1>
+    <div id="box">
+        <form action="/searching/<%= playlistId %>" method="post" >
+            <input id= "search" type="text" name="search" placeholder="Search Artists, Songs" >
+            <input class="button" type="submit" value="+" id="btn">
+        </form>
+
+    </div>
+
+
+        
 </body>
 </html>
+
 
