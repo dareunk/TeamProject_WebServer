@@ -7,9 +7,29 @@
     <title>Tracks</title>
 
     <style>
+
+      body{
+        background-color: #24222c;
+      }
+      a{
+        text-decoration-line: none;
+        color: #fff;
+      }
+      a:visited{
+        text-decoration-line:none;
+        color: #fff;
+
+      }
+
+      #btn{
+        margin: 10px;
+      }
         .tracks-container {
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
+            background-color: #ffffff;
+            border-radius: 20px;
         }
 
         .tracks-item {
@@ -41,12 +61,12 @@
 </head>
 
 <body>
-    <h1>Tracks</h1>
-    <div><a href="/searchsong/<%= playlistId %>">Search Song</a></div>
+    <h1 style="text-align: center; color: #fff;">Tracks</h1>
+    <div id="btn"><a href="/searchsong/<%= playlistId %>">Search Song</a></div>
     <% if(roomId){ %>
-      <div><a href="/chat/<%= roomId %>/<%= playlistId %>">채팅방 돌아가기</a></div>
+      <div id="btn"><a href="/chat/<%= roomId %>/<%= playlistId %>">채팅방 돌아가기</a></div>
     <% }else{ %>
-      <div><a href="/playlist/<%= playlistId %>">플레이리스트 돌아가기</a></div>
+      <div id="btn"><a href="/playlist/<%= playlistId %>">플레이리스트 돌아가기</a></div>
     <% } %>
     <div class="tracks-container">
         <% tracks.forEach(function(track, index) { %>
