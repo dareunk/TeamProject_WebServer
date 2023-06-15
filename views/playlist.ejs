@@ -4,14 +4,101 @@
   <meta charset="utf-8">
   <title>Playlist</title>
   <link rel="stylesheet" type="text/css" href="/styles/style.css">
+<style>>
+ /* Reset CSS */
+		    * {
+			          box-sizing: border-box;
+			          margin: 0;
+			          padding: 0;
+			        }
+
+    /* Global Styles */
+	    body {
+		          font-family: Arial, sans-serif;
+		          background-color: #24222C;
+		          color: #333;
+		        }
+	  h1{
+		  color:#ffffff;
+	  }
+
+    .trackContainer {
+	          width:600px;
+		  height:500px;
+		  text-align:center;
+		  display:flex;
+	          margin: 0 auto;
+	          padding: 20px;
+		  color:#ffffff;
+		  padding-left:10px;
+		  border-radius:25px;
+		  background-color:#ffffff;
+		  overflow:scroll;
+	        }
+    .trackContainer::-webkit-scrollbar{
+  width:10px;
+    }
+    .trackContainer::-webkit-scrollbar-thumb{
+	    height:50%;
+	    background-color:#67A7E1;
+    }
+    .trackContainer::-webkit-scrollbar-track{
+	    background-color:#ffffff;
+    }
+
+    .header {
+	          text-align: center;
+	          margin-bottom: 20px;
+	        }
+
+    .playlist {
+	          
+	          padding: 20px;
+	          border-radius: 5px;
+	        }
+
+    .track-list {
+	          list-style: none;
+	          padding: 0;
+	        }
+
+    .track {
+	          display: flex;
+	          align-items: center;
+	          margin-bottom: 20px;
+	        }
+
+    .track img {
+	          width: 50px;
+	          height: 50px;
+	          object-fit: cover;
+	          margin-right: 10px;
+	        }
+
+    .track-info {
+	          flex-grow: 1;
+	        }
+
+    .track-info h3 {
+	          margin: 0;
+	        }
+
+    .track-info p {
+	          margin: 0;
+	          font-size: 14px;
+	          color: #888;
+	        }
+</style>
+
 </head>
 <body>
   <header class="header">
-    <h1>Playlist: <%= playlist.name %></h1>
+    <h1 class="playlistName">Playlist: <%= playlist.name %></h1>
   </header>
 
   <main class="playlist">
-    <h1><%= playlist.name %></h1>
+    <h1 class="playlistName"><%= playlist.name %></h1>
+    <div class="trackContainer">
     <ul class="track-list">
       <% if (playlist.body.tracks && playlist.body.tracks.items) { %>
         <% playlist.body.tracks.items.forEach(function(track) { %>
@@ -19,11 +106,11 @@
             <img src="<%= track.track.album.images[0].url %>" alt="Album Art">
             <div class="track-info">
               <h3><%= track.track.name %></h3>
-              <p><%= track.track.artists[0].name %></p>
-              <audio controls>
+              <p><%= track.track.artists[0].name %></p> 
+	 <audio controls>
                 <source src="<%= track.track.preview_url %>" type="audio/mpeg">
                 Your browser does not support the audio element.
-              </audio>
+	 </audio>  
             </div>
           </li>
         <% }); %>
@@ -31,11 +118,18 @@
         <p>No tracks found.</p>
       <% } %>
     </ul>
-    <!-- 플레이리스트에 노래 추가하는 폼 -->
-    <form action="/playlist/<%= playlist.id %>/addSong" method="POST">
-      <input type="text" name="songName" placeholder="노래 검색">
-      <button type="submit">추가</button>
-    </form>
+    </div>
+    <!-- add song to playlist-->
+      <h1>add song</h1>
+          <div><a href="/searchsong/<%= playlist.id %>">Search & Add Song</a></div>
+	      <h1>-----------------------------------------------------------</h1>
+	        <h1>Edit Playlist Name</h1>
+		          <form action="/playlist/<%= playlist.id %>/editName" method="POST">
+				        <input type="text" name="newName" placeholder="이름 수정">
+					      <button type="submit">Save</button>
+					          </form>	
+						  <h1>-----------------------------------------------------------</h1>
+						          <h1>Back</h1>
     <div>
       <ul>
         <li><a href="/plimatelist">playlist</a></li>

@@ -11,22 +11,36 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/autho
+~MSle0~/scope
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1685717076,,"wq"
 :q
-|2,0,1685716987,,"q"
+|2,0,1686831339,,"q"
+:wq
+|2,0,1686820195,,"wq"
+:w
+|2,0,1686817204,,"w"
+:Wq
+|2,0,1686807739,,"Wq"
+:'<,'>q
+|2,0,1686743303,,"'<,'>q"
+:?scope
+|2,0,1685940108,,"?scope"
+:?playlist
+|2,0,1685777935,,"?playlist"
 :?autho
 |2,0,1685701761,,"?autho"
 :/auth
 |2,0,1685701725,,"/auth"
 
 # Search String History (newest to oldest):
+? scope
+|2,1,1685940108,,"scope"
+? playlist
+|2,1,1685777935,,"playlist"
 ? autho
 |2,1,1685701761,,"autho"
 ? auth
@@ -42,325 +56,553 @@ $
 
 # Registers:
 ""-	CHAR	0
-	"
-|3,1,36,0,1,0,1685714811,"\""
+	>
+|3,1,36,0,1,0,1686807739,">"
 
 # File marks:
 'M  7  62  ~/app.js
 |4,77,7,62,1685701773,"~/app.js"
-'0  464  1  ~/app.js
-|4,48,464,1,1685717076,"~/app.js"
-'1  37  9  ~/views/findPli.ejs
-|4,49,37,9,1685717063,"~/views/findPli.ejs"
-'2  1  0  ~/views/Playlist.ejs
-|4,50,1,0,1685716987,"~/views/Playlist.ejs"
-'3  1  14  ~/views/playlists.ejs
-|4,51,1,14,1685716982,"~/views/playlists.ejs"
-'4  1  0  ~/views/Playlist.ejs
-|4,52,1,0,1685716960,"~/views/Playlist.ejs"
-'5  46  0  ~/views/findPli.ejs
-|4,53,46,0,1685716953,"~/views/findPli.ejs"
-'6  12  0  ~/views/findPli.ejs
-|4,54,12,0,1685716953,"~/views/findPli.ejs"
-'7  29  6  ~/views/search.ejs
-|4,55,29,6,1685716792,"~/views/search.ejs"
-'8  461  38  ~/app.js
-|4,56,461,38,1685716731,"~/app.js"
-'9  461  38  ~/app.js
-|4,57,461,38,1685716731,"~/app.js"
+'0  16  21  ~/views/playlists.ejs
+|4,48,16,21,1686831339,"~/views/playlists.ejs"
+'1  39  9  ~/views/playlist.ejs
+|4,49,39,9,1686820195,"~/views/playlist.ejs"
+'2  43  29  ~/views/playlist.ejs
+|4,50,43,29,1686820129,"~/views/playlist.ejs"
+'3  43  29  ~/views/playlist.ejs
+|4,51,43,29,1686820129,"~/views/playlist.ejs"
+'4  46  8  ~/views/playlist.ejs
+|4,52,46,8,1686819960,"~/views/playlist.ejs"
+'5  42  8  ~/views/playlist.ejs
+|4,53,42,8,1686819960,"~/views/playlist.ejs"
+'6  46  8  ~/views/playlist.ejs
+|4,54,46,8,1686819960,"~/views/playlist.ejs"
+'7  42  8  ~/views/playlist.ejs
+|4,55,42,8,1686819960,"~/views/playlist.ejs"
+'8  27  16  ~/views/playlist.ejs
+|4,56,27,16,1686819761,"~/views/playlist.ejs"
+'9  27  16  ~/views/playlist.ejs
+|4,57,27,16,1686819761,"~/views/playlist.ejs"
 
 # Jumplist (newest first):
--'  464  1  ~/app.js
-|4,39,464,1,1685717076,"~/app.js"
--'  461  38  ~/app.js
-|4,39,461,38,1685717068,"~/app.js"
--'  37  9  ~/views/findPli.ejs
-|4,39,37,9,1685717063,"~/views/findPli.ejs"
--'  37  9  ~/views/findPli.ejs
-|4,39,37,9,1685717063,"~/views/findPli.ejs"
--'  46  0  ~/views/findPli.ejs
-|4,39,46,0,1685716990,"~/views/findPli.ejs"
--'  46  0  ~/views/findPli.ejs
-|4,39,46,0,1685716990,"~/views/findPli.ejs"
--'  1  0  ~/views/Playlist.ejs
-|4,39,1,0,1685716987,"~/views/Playlist.ejs"
--'  1  0  ~/views/Playlist.ejs
-|4,39,1,0,1685716987,"~/views/Playlist.ejs"
--'  1  0  ~/views/Playlist.ejs
-|4,39,1,0,1685716987,"~/views/Playlist.ejs"
--'  1  0  ~/views/Playlist.ejs
-|4,39,1,0,1685716987,"~/views/Playlist.ejs"
--'  1  14  ~/views/playlists.ejs
-|4,39,1,14,1685716982,"~/views/playlists.ejs"
--'  1  14  ~/views/playlists.ejs
-|4,39,1,14,1685716982,"~/views/playlists.ejs"
--'  1  14  ~/views/playlists.ejs
-|4,39,1,14,1685716982,"~/views/playlists.ejs"
--'  1  14  ~/views/playlists.ejs
-|4,39,1,14,1685716982,"~/views/playlists.ejs"
--'  1  14  ~/views/playlists.ejs
-|4,39,1,14,1685716982,"~/views/playlists.ejs"
--'  1  14  ~/views/playlists.ejs
-|4,39,1,14,1685716982,"~/views/playlists.ejs"
--'  1  14  ~/views/playlists.ejs
-|4,39,1,14,1685716982,"~/views/playlists.ejs"
--'  1  14  ~/views/playlists.ejs
-|4,39,1,14,1685716982,"~/views/playlists.ejs"
--'  44  32  ~/views/playlists.ejs
-|4,39,44,32,1685716966,"~/views/playlists.ejs"
--'  44  32  ~/views/playlists.ejs
-|4,39,44,32,1685716966,"~/views/playlists.ejs"
--'  44  32  ~/views/playlists.ejs
-|4,39,44,32,1685716966,"~/views/playlists.ejs"
--'  44  32  ~/views/playlists.ejs
-|4,39,44,32,1685716966,"~/views/playlists.ejs"
--'  44  32  ~/views/playlists.ejs
-|4,39,44,32,1685716966,"~/views/playlists.ejs"
--'  44  32  ~/views/playlists.ejs
-|4,39,44,32,1685716966,"~/views/playlists.ejs"
--'  44  32  ~/views/playlists.ejs
-|4,39,44,32,1685716966,"~/views/playlists.ejs"
--'  44  32  ~/views/playlists.ejs
-|4,39,44,32,1685716966,"~/views/playlists.ejs"
--'  1  0  ~/views/Playlist.ejs
-|4,39,1,0,1685716960,"~/views/Playlist.ejs"
--'  1  0  ~/views/Playlist.ejs
-|4,39,1,0,1685716960,"~/views/Playlist.ejs"
--'  1  0  ~/views/Playlist.ejs
-|4,39,1,0,1685716960,"~/views/Playlist.ejs"
--'  1  0  ~/views/Playlist.ejs
-|4,39,1,0,1685716960,"~/views/Playlist.ejs"
--'  1  0  ~/views/Playlist.ejs
-|4,39,1,0,1685716960,"~/views/Playlist.ejs"
--'  1  0  ~/views/Playlist.ejs
-|4,39,1,0,1685716960,"~/views/Playlist.ejs"
--'  1  0  ~/views/Playlist.ejs
-|4,39,1,0,1685716960,"~/views/Playlist.ejs"
--'  1  0  ~/views/Playlist.ejs
-|4,39,1,0,1685716960,"~/views/Playlist.ejs"
--'  12  0  ~/views/findPli.ejs
-|4,39,12,0,1685716953,"~/views/findPli.ejs"
--'  12  0  ~/views/findPli.ejs
-|4,39,12,0,1685716953,"~/views/findPli.ejs"
--'  12  0  ~/views/findPli.ejs
-|4,39,12,0,1685716953,"~/views/findPli.ejs"
--'  12  0  ~/views/findPli.ejs
-|4,39,12,0,1685716953,"~/views/findPli.ejs"
--'  12  0  ~/views/findPli.ejs
-|4,39,12,0,1685716953,"~/views/findPli.ejs"
--'  12  0  ~/views/findPli.ejs
-|4,39,12,0,1685716953,"~/views/findPli.ejs"
--'  12  0  ~/views/findPli.ejs
-|4,39,12,0,1685716953,"~/views/findPli.ejs"
--'  12  0  ~/views/findPli.ejs
-|4,39,12,0,1685716953,"~/views/findPli.ejs"
--'  12  0  ~/views/findPli.ejs
-|4,39,12,0,1685716953,"~/views/findPli.ejs"
--'  12  0  ~/views/findPli.ejs
-|4,39,12,0,1685716953,"~/views/findPli.ejs"
--'  12  0  ~/views/findPli.ejs
-|4,39,12,0,1685716953,"~/views/findPli.ejs"
--'  12  0  ~/views/findPli.ejs
-|4,39,12,0,1685716953,"~/views/findPli.ejs"
--'  12  0  ~/views/findPli.ejs
-|4,39,12,0,1685716953,"~/views/findPli.ejs"
--'  12  0  ~/views/findPli.ejs
-|4,39,12,0,1685716953,"~/views/findPli.ejs"
--'  12  0  ~/views/findPli.ejs
-|4,39,12,0,1685716953,"~/views/findPli.ejs"
--'  12  0  ~/views/findPli.ejs
-|4,39,12,0,1685716953,"~/views/findPli.ejs"
--'  43  25  ~/views/findPli.ejs
-|4,39,43,25,1685716797,"~/views/findPli.ejs"
--'  9  25  ~/views/findPli.ejs
-|4,39,9,25,1685716797,"~/views/findPli.ejs"
--'  9  25  ~/views/findPli.ejs
-|4,39,9,25,1685716797,"~/views/findPli.ejs"
--'  9  25  ~/views/findPli.ejs
-|4,39,9,25,1685716797,"~/views/findPli.ejs"
--'  9  25  ~/views/findPli.ejs
-|4,39,9,25,1685716797,"~/views/findPli.ejs"
--'  9  25  ~/views/findPli.ejs
-|4,39,9,25,1685716797,"~/views/findPli.ejs"
--'  9  25  ~/views/findPli.ejs
-|4,39,9,25,1685716797,"~/views/findPli.ejs"
--'  9  25  ~/views/findPli.ejs
-|4,39,9,25,1685716797,"~/views/findPli.ejs"
--'  9  25  ~/views/findPli.ejs
-|4,39,9,25,1685716797,"~/views/findPli.ejs"
--'  43  25  ~/views/findPli.ejs
-|4,39,43,25,1685716797,"~/views/findPli.ejs"
--'  9  25  ~/views/findPli.ejs
-|4,39,9,25,1685716797,"~/views/findPli.ejs"
--'  9  25  ~/views/findPli.ejs
-|4,39,9,25,1685716797,"~/views/findPli.ejs"
--'  9  25  ~/views/findPli.ejs
-|4,39,9,25,1685716797,"~/views/findPli.ejs"
--'  9  25  ~/views/findPli.ejs
-|4,39,9,25,1685716797,"~/views/findPli.ejs"
--'  9  25  ~/views/findPli.ejs
-|4,39,9,25,1685716797,"~/views/findPli.ejs"
--'  9  25  ~/views/findPli.ejs
-|4,39,9,25,1685716797,"~/views/findPli.ejs"
--'  9  25  ~/views/findPli.ejs
-|4,39,9,25,1685716797,"~/views/findPli.ejs"
--'  9  25  ~/views/findPli.ejs
-|4,39,9,25,1685716797,"~/views/findPli.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
--'  29  6  ~/views/search.ejs
-|4,39,29,6,1685716792,"~/views/search.ejs"
+-'  16  21  ~/views/playlists.ejs
+|4,39,16,21,1686831339,"~/views/playlists.ejs"
+-'  23  14  ~/views/playlists.ejs
+|4,39,23,14,1686831303,"~/views/playlists.ejs"
+-'  39  9  ~/views/playlist.ejs
+|4,39,39,9,1686820195,"~/views/playlist.ejs"
+-'  39  9  ~/views/playlist.ejs
+|4,39,39,9,1686820195,"~/views/playlist.ejs"
+-'  43  29  ~/views/playlist.ejs
+|4,39,43,29,1686820190,"~/views/playlist.ejs"
+-'  43  29  ~/views/playlist.ejs
+|4,39,43,29,1686820190,"~/views/playlist.ejs"
+-'  43  29  ~/views/playlist.ejs
+|4,39,43,29,1686820129,"~/views/playlist.ejs"
+-'  43  29  ~/views/playlist.ejs
+|4,39,43,29,1686820129,"~/views/playlist.ejs"
+-'  44  0  ~/views/playlist.ejs
+|4,39,44,0,1686820078,"~/views/playlist.ejs"
+-'  44  0  ~/views/playlist.ejs
+|4,39,44,0,1686820078,"~/views/playlist.ejs"
+-'  44  0  ~/views/playlist.ejs
+|4,39,44,0,1686820078,"~/views/playlist.ejs"
+-'  44  0  ~/views/playlist.ejs
+|4,39,44,0,1686820078,"~/views/playlist.ejs"
+-'  40  4  ~/views/playlist.ejs
+|4,39,40,4,1686820068,"~/views/playlist.ejs"
+-'  40  4  ~/views/playlist.ejs
+|4,39,40,4,1686820068,"~/views/playlist.ejs"
+-'  40  4  ~/views/playlist.ejs
+|4,39,40,4,1686820068,"~/views/playlist.ejs"
+-'  40  4  ~/views/playlist.ejs
+|4,39,40,4,1686820068,"~/views/playlist.ejs"
+-'  46  8  ~/views/playlist.ejs
+|4,39,46,8,1686820031,"~/views/playlist.ejs"
+-'  46  8  ~/views/playlist.ejs
+|4,39,46,8,1686820031,"~/views/playlist.ejs"
+-'  46  8  ~/views/playlist.ejs
+|4,39,46,8,1686820031,"~/views/playlist.ejs"
+-'  46  8  ~/views/playlist.ejs
+|4,39,46,8,1686820031,"~/views/playlist.ejs"
+-'  42  8  ~/views/playlist.ejs
+|4,39,42,8,1686819960,"~/views/playlist.ejs"
+-'  42  8  ~/views/playlist.ejs
+|4,39,42,8,1686819960,"~/views/playlist.ejs"
+-'  42  8  ~/views/playlist.ejs
+|4,39,42,8,1686819960,"~/views/playlist.ejs"
+-'  42  8  ~/views/playlist.ejs
+|4,39,42,8,1686819960,"~/views/playlist.ejs"
+-'  47  4  ~/views/playlist.ejs
+|4,39,47,4,1686819918,"~/views/playlist.ejs"
+-'  47  4  ~/views/playlist.ejs
+|4,39,47,4,1686819918,"~/views/playlist.ejs"
+-'  43  4  ~/views/playlist.ejs
+|4,39,43,4,1686819918,"~/views/playlist.ejs"
+-'  47  4  ~/views/playlist.ejs
+|4,39,47,4,1686819918,"~/views/playlist.ejs"
+-'  47  4  ~/views/playlist.ejs
+|4,39,47,4,1686819918,"~/views/playlist.ejs"
+-'  43  4  ~/views/playlist.ejs
+|4,39,43,4,1686819918,"~/views/playlist.ejs"
+-'  40  4  ~/views/playlist.ejs
+|4,39,40,4,1686819896,"~/views/playlist.ejs"
+-'  40  4  ~/views/playlist.ejs
+|4,39,40,4,1686819896,"~/views/playlist.ejs"
+-'  39  0  ~/views/playlist.ejs
+|4,39,39,0,1686819864,"~/views/playlist.ejs"
+-'  39  0  ~/views/playlist.ejs
+|4,39,39,0,1686819864,"~/views/playlist.ejs"
+-'  39  0  ~/views/playlist.ejs
+|4,39,39,0,1686819864,"~/views/playlist.ejs"
+-'  39  0  ~/views/playlist.ejs
+|4,39,39,0,1686819864,"~/views/playlist.ejs"
+-'  37  9  ~/views/playlist.ejs
+|4,39,37,9,1686819861,"~/views/playlist.ejs"
+-'  37  9  ~/views/playlist.ejs
+|4,39,37,9,1686819861,"~/views/playlist.ejs"
+-'  37  9  ~/views/playlist.ejs
+|4,39,37,9,1686819861,"~/views/playlist.ejs"
+-'  37  9  ~/views/playlist.ejs
+|4,39,37,9,1686819861,"~/views/playlist.ejs"
+-'  37  9  ~/views/playlist.ejs
+|4,39,37,9,1686819861,"~/views/playlist.ejs"
+-'  37  9  ~/views/playlist.ejs
+|4,39,37,9,1686819861,"~/views/playlist.ejs"
+-'  27  16  ~/views/playlist.ejs
+|4,39,27,16,1686819840,"~/views/playlist.ejs"
+-'  27  16  ~/views/playlist.ejs
+|4,39,27,16,1686819840,"~/views/playlist.ejs"
+-'  27  16  ~/views/playlist.ejs
+|4,39,27,16,1686819840,"~/views/playlist.ejs"
+-'  27  16  ~/views/playlist.ejs
+|4,39,27,16,1686819840,"~/views/playlist.ejs"
+-'  27  16  ~/views/playlist.ejs
+|4,39,27,16,1686819840,"~/views/playlist.ejs"
+-'  27  16  ~/views/playlist.ejs
+|4,39,27,16,1686819840,"~/views/playlist.ejs"
+-'  27  16  ~/views/playlist.ejs
+|4,39,27,16,1686819761,"~/views/playlist.ejs"
+-'  27  16  ~/views/playlist.ejs
+|4,39,27,16,1686819761,"~/views/playlist.ejs"
+-'  36  19  ~/views/playlist.ejs
+|4,39,36,19,1686819752,"~/views/playlist.ejs"
+-'  36  19  ~/views/playlist.ejs
+|4,39,36,19,1686819752,"~/views/playlist.ejs"
+-'  36  19  ~/views/playlist.ejs
+|4,39,36,19,1686819752,"~/views/playlist.ejs"
+-'  36  19  ~/views/playlist.ejs
+|4,39,36,19,1686819752,"~/views/playlist.ejs"
+-'  36  19  ~/views/playlist.ejs
+|4,39,36,19,1686819752,"~/views/playlist.ejs"
+-'  36  19  ~/views/playlist.ejs
+|4,39,36,19,1686819752,"~/views/playlist.ejs"
+-'  36  19  ~/views/playlist.ejs
+|4,39,36,19,1686819752,"~/views/playlist.ejs"
+-'  36  19  ~/views/playlist.ejs
+|4,39,36,19,1686819752,"~/views/playlist.ejs"
+-'  35  19  ~/views/playlist.ejs
+|4,39,35,19,1686819693,"~/views/playlist.ejs"
+-'  35  19  ~/views/playlist.ejs
+|4,39,35,19,1686819693,"~/views/playlist.ejs"
+-'  35  19  ~/views/playlist.ejs
+|4,39,35,19,1686819693,"~/views/playlist.ejs"
+-'  35  19  ~/views/playlist.ejs
+|4,39,35,19,1686819693,"~/views/playlist.ejs"
+-'  35  19  ~/views/playlist.ejs
+|4,39,35,19,1686819693,"~/views/playlist.ejs"
+-'  35  19  ~/views/playlist.ejs
+|4,39,35,19,1686819693,"~/views/playlist.ejs"
+-'  35  19  ~/views/playlist.ejs
+|4,39,35,19,1686819693,"~/views/playlist.ejs"
+-'  35  19  ~/views/playlist.ejs
+|4,39,35,19,1686819693,"~/views/playlist.ejs"
+-'  34  21  ~/views/playlist.ejs
+|4,39,34,21,1686819676,"~/views/playlist.ejs"
+-'  33  21  ~/views/playlist.ejs
+|4,39,33,21,1686819676,"~/views/playlist.ejs"
+-'  34  21  ~/views/playlist.ejs
+|4,39,34,21,1686819676,"~/views/playlist.ejs"
+-'  33  21  ~/views/playlist.ejs
+|4,39,33,21,1686819676,"~/views/playlist.ejs"
+-'  34  21  ~/views/playlist.ejs
+|4,39,34,21,1686819676,"~/views/playlist.ejs"
+-'  33  21  ~/views/playlist.ejs
+|4,39,33,21,1686819676,"~/views/playlist.ejs"
+-'  34  21  ~/views/playlist.ejs
+|4,39,34,21,1686819676,"~/views/playlist.ejs"
+-'  33  21  ~/views/playlist.ejs
+|4,39,33,21,1686819676,"~/views/playlist.ejs"
+-'  34  21  ~/views/playlist.ejs
+|4,39,34,21,1686819676,"~/views/playlist.ejs"
+-'  33  21  ~/views/playlist.ejs
+|4,39,33,21,1686819676,"~/views/playlist.ejs"
+-'  34  21  ~/views/playlist.ejs
+|4,39,34,21,1686819676,"~/views/playlist.ejs"
+-'  33  21  ~/views/playlist.ejs
+|4,39,33,21,1686819676,"~/views/playlist.ejs"
+-'  34  21  ~/views/playlist.ejs
+|4,39,34,21,1686819676,"~/views/playlist.ejs"
+-'  33  21  ~/views/playlist.ejs
+|4,39,33,21,1686819676,"~/views/playlist.ejs"
+-'  34  21  ~/views/playlist.ejs
+|4,39,34,21,1686819676,"~/views/playlist.ejs"
+-'  33  21  ~/views/playlist.ejs
+|4,39,33,21,1686819676,"~/views/playlist.ejs"
+-'  33  21  ~/views/playlist.ejs
+|4,39,33,21,1686819450,"~/views/playlist.ejs"
+-'  33  21  ~/views/playlist.ejs
+|4,39,33,21,1686819450,"~/views/playlist.ejs"
+-'  32  21  ~/views/playlist.ejs
+|4,39,32,21,1686819444,"~/views/playlist.ejs"
+-'  32  21  ~/views/playlist.ejs
+|4,39,32,21,1686819444,"~/views/playlist.ejs"
+-'  32  21  ~/views/playlist.ejs
+|4,39,32,21,1686819444,"~/views/playlist.ejs"
+-'  33  21  ~/views/playlist.ejs
+|4,39,33,21,1686819444,"~/views/playlist.ejs"
+-'  32  21  ~/views/playlist.ejs
+|4,39,32,21,1686819444,"~/views/playlist.ejs"
+-'  32  21  ~/views/playlist.ejs
+|4,39,32,21,1686819444,"~/views/playlist.ejs"
+-'  32  21  ~/views/playlist.ejs
+|4,39,32,21,1686819444,"~/views/playlist.ejs"
+-'  32  21  ~/views/playlist.ejs
+|4,39,32,21,1686819444,"~/views/playlist.ejs"
+-'  32  21  ~/views/playlist.ejs
+|4,39,32,21,1686819444,"~/views/playlist.ejs"
+-'  33  21  ~/views/playlist.ejs
+|4,39,33,21,1686819444,"~/views/playlist.ejs"
+-'  32  21  ~/views/playlist.ejs
+|4,39,32,21,1686819444,"~/views/playlist.ejs"
+-'  32  21  ~/views/playlist.ejs
+|4,39,32,21,1686819444,"~/views/playlist.ejs"
+-'  32  21  ~/views/playlist.ejs
+|4,39,32,21,1686819408,"~/views/playlist.ejs"
+-'  32  21  ~/views/playlist.ejs
+|4,39,32,21,1686819408,"~/views/playlist.ejs"
+-'  35  28  ~/views/playlist.ejs
+|4,39,35,28,1686819377,"~/views/playlist.ejs"
+-'  34  28  ~/views/playlist.ejs
+|4,39,34,28,1686819377,"~/views/playlist.ejs"
 
 # History of marks within files (newest to oldest):
 
+> ~/views/playlists.ejs
+	*	1686831327	0
+	"	16	21
+	^	23	15
+	.	23	14
+	+	91	43
+	+	79	0
+	+	78	80
+	+	78	34
+	+	78	183
+	+	78	65
+	+	78	178
+	+	78	61
+	+	78	131
+	+	79	0
+	+	77	16
+	+	76	44
+	+	75	32
+	+	12	16
+	+	19	49
+	+	19	73
+	+	19	19
+	+	21	0
+	+	25	0
+	+	22	23
+	+	63	17
+	+	63	203
+	+	63	80
+	+	62	10
+	+	59	0
+	+	58	129
+	+	58	2
+	+	55	18
+	+	63	80
+	+	67	20
+	+	63	10
+	+	64	11
+	+	63	10
+	+	48	4
+	+	75	62
+	+	48	10
+	+	51	9
+	+	50	9
+	+	63	10
+	+	65	11
+	+	64	11
+	+	51	9
+	+	65	11
+	+	63	10
+	+	65	11
+	+	66	10
+	+	65	11
+	+	66	11
+	+	67	21
+	+	22	42
+	+	63	10
+	+	33	50
+	+	20	12
+	+	27	40
+	+	22	24
+	+	25	0
+	+	73	21
+	+	91	0
+	+	92	10
+	+	61	0
+	+	59	28
+	+	27	41
+	+	27	64
+	+	33	43
+	+	41	20
+	+	34	0
+	+	41	0
+	+	29	0
+	+	20	39
+	+	20	40
+	+	20	16
+	+	21	0
+	+	16	4
+	+	27	41
+	+	29	0
+	+	46	48
+	+	46	53
+	+	41	44
+	+	36	25
+	+	42	0
+	+	47	0
+	+	79	0
+	+	20	11
+	+	27	64
+	+	37	0
+	+	36	45
+	+	41	44
+	+	46	51
+	+	29	0
+	+	36	24
+	+	42	0
+	+	46	28
+	+	28	0
+	+	20	12
+	+	28	0
+	+	20	14
+	+	16	18
+	+	23	18
+	+	24	12
+	+	23	14
+
+> ~/views/playlist.ejs
+	*	1686820195	0
+	"	39	9
+	^	39	10
+	.	39	9
+	+	140	6
+	+	134	43
+	+	135	36
+	+	6	0
+	+	5	13
+	+	109	55
+	+	109	57
+	+	109	101
+	+	113	129
+	+	109	97
+	+	111	0
+	+	109	63
+	+	113	123
+	+	112	86
+	+	110	23
+	+	111	0
+	+	109	112
+	+	113	15
+	+	113	16
+	+	109	113
+	+	113	10
+	+	109	63
+	+	7	9
+	+	8	84
+	+	8	127
+	+	92	0
+	+	110	4
+	+	113	75
+	+	109	119
+	+	113	107
+	+	113	24
+	+	110	1
+	+	109	63
+	+	111	71
+	+	109	63
+	+	106	14
+	+	111	60
+	+	110	19
+	+	112	27
+	+	110	8
+	+	113	0
+	+	113	9
+	+	109	55
+	+	132	28
+	+	122	0
+	+	126	8
+	+	127	0
+	+	130	23
+	+	90	9
+	+	7	0
+	+	91	0
+	+	18	36
+	+	96	27
+	+	23	0
+	+	32	17
+	+	22	15
+	+	27	22
+	+	29	15
+	+	100	27
+	+	101	11
+	+	121	9
+	+	25	10
+	+	55	11
+	+	35	28
+	+	21	4
+	+	33	21
+	+	34	21
+	+	36	19
+	+	27	16
+	+	39	2
+	+	40	0
+	+	39	11
+	+	48	0
+	+	46	8
+	+	44	0
+	+	46	28
+	+	43	29
+	+	39	9
+
 > ~/app.js
-	*	1685717075	0
-	"	464	1
-	^	464	2
-	.	464	2
-	+	1	3
-	+	497	2
-	+	200	24
-	+	201	0
-	+	212	3
-	+	200	18
-	+	214	10
-	+	200	18
-	+	312	19
-	+	320	19
-	+	326	9
-	+	31	21
-	+	34	50
-	+	35	54
-	+	36	43
-	+	44	1
-	+	45	1
-	+	46	40
-	+	330	24
-	+	36	39
-	+	330	33
-	+	473	495
-	+	441	0
-	+	473	0
-	+	442	40
-	+	453	4
-	+	452	37
-	+	441	0
-	+	472	1
-	+	454	2
-	+	451	2
-	+	446	33
-	+	447	19
-	+	449	0
-	+	447	20
-	+	450	0
-	+	449	31
-	+	446	33
-	+	447	19
-	+	427	8
-	+	449	32
-	+	446	45
-	+	441	0
-	+	439	3
-	+	441	7
-	+	442	23
-	+	444	0
-	+	445	27
-	+	436	27
+	*	1686755179	0
+	"	442	112
+	^	442	113
+	.	442	113
+	+	391	278
+	+	391	280
+	+	391	279
+	+	90	1
+	+	89	25
+	+	89	197
+	+	391	228
+	+	391	136
+	+	391	200
+	+	391	212
+	+	404	52
+	+	404	53
+	+	413	19
+	+	392	0
+	+	413	19
+	+	414	0
+	+	404	68
+	+	404	56
+	+	404	64
+	+	402	3
+	+	404	83
+	+	404	19
+	+	407	100
+	+	411	0
+	+	408	27
+	+	404	56
+	+	404	23
+	+	409	31
+	+	485	3
+	+	407	83
+	+	405	0
+	+	404	64
+	+	404	33
+	+	404	31
+	+	407	0
+	+	405	36
+	+	406	21
+	+	405	31
+	+	406	1
+	+	404	54
+	+	406	36
+	+	409	36
+	+	406	34
+	+	409	29
+	+	408	30
+	+	409	0
+	+	508	34
+	+	513	57
+	+	516	6
+	+	89	223
+	+	404	1
+	+	405	1
+	+	406	1
+	+	407	1
+	+	408	1
+	+	409	1
+	+	411	3
+	+	412	4
+	+	413	6
+	+	414	1
+	+	507	0
+	+	449	7
+	+	485	2
+	+	101	0
+	+	102	1
+	+	103	2
+	+	104	1
+	+	105	1
+	+	83	0
+	+	8	0
+	+	34	1
+	+	35	1
+	+	36	1
+	+	37	40
+	+	39	46
+	+	421	56
+	+	425	61
+	+	427	4
+	+	442	225
+	+	429	0
+	+	434	0
+	+	435	0
+	+	436	0
+	+	437	0
+	+	436	40
+	+	437	0
 	+	438	0
-	+	437	11
-	+	436	13
-	+	448	48
-	+	460	33
-	+	464	3
-	+	461	23
-	+	460	51
-	+	463	29
-	+	448	37
-	+	463	29
-	+	448	27
-	+	463	56
-	+	464	2
-	+	465	18
-	+	468	3
-	+	457	23
-	+	458	17
-	+	457	24
-	+	459	0
-	+	457	26
-	+	458	2
-	+	464	38
-	+	457	27
-	+	461	33
-	+	464	3
-	+	462	14
-	+	461	38
-	+	464	2
+	+	439	0
+	+	440	7
+	+	440	57
+	+	441	0
+	+	442	0
+	+	442	168
+	+	444	0
+	+	442	201
+	+	443	0
+	+	432	3
+	+	472	2
+	+	424	41
+	+	442	113
+
+> ~/.env
+	*	1686753917	0
+	"	7	43
+	^	7	44
+	.	6	31
+	+	2	25
+	+	5	17
+	+	2	18
+	+	6	44
+	+	8	0
+	+	6	31
+
+> /usr/share/vim/vim81/doc/help.txt
+	*	1686753824	0
+	"	1	0
 
 > ~/views/findPli.ejs
-	*	1685717056	0
-	"	37	9
-	^	37	10
+	*	1686748051	0
+	"	37	8
+	^	37	9
 	.	37	9
 	+	40	47
 	+	57	6
@@ -373,71 +615,8 @@ $
 	+	4	6
 	+	37	9
 
-> ~/views/Playlist.ejs
-	*	1685716987	0
-	"	1	0
-
-> ~/views/playlists.ejs
-	*	1685716982	0
-	"	1	14
-	^	44	33
-	.	44	32
-	+	64	7
-	+	60	43
-	+	48	0
-	+	47	80
-	+	47	34
-	+	47	183
-	+	47	65
-	+	47	178
-	+	47	61
-	+	47	131
-	+	48	0
-	+	46	16
-	+	45	44
-	+	44	32
-
-> /usr/share/vim/vim81/doc/help.txt
-	*	1685716948	0
-	"	1	0
-
-> ~/views/search.ejs
-	*	1685716792	0
-	"	29	6
-	^	29	7
-	.	14	33
-	+	1	10
-	+	29	6
-	+	2	5
-	+	1	1
-	+	5	10
-	+	6	19
-	+	7	8
-	+	5	11
-	+	7	43
-	+	8	23
-	+	9	56
-	+	10	77
-	+	11	42
-	+	25	0
-	+	22	0
-	+	7	42
-	+	21	0
-	+	7	44
-	+	20	12
-	+	7	43
-	+	10	35
-	+	18	6
-	+	13	0
-	+	12	63
-	+	19	12
-	+	12	53
-	+	13	18
-	+	16	21
-	+	14	33
-
 > ~/views/searchBar.ejs
-	*	1685715577	0
+	*	1686745172	0
 	"	15	0
 	^	14	7
 	.	14	7
@@ -447,28 +626,87 @@ $
 	+	12	7
 	+	14	7
 
-> ~/views/playlist.ejs
-	*	1685714970	0
-	"	7	6
-	^	41	37
-	.	5	13
-	+	46	6
-	+	40	43
-	+	41	36
-	+	6	0
-	+	5	13
+> ~/views/search.ejs
+	*	1686745159	0
+	"	37	6
+	^	22	31
+	.	22	31
+	+	1	10
+	+	37	6
+	+	2	5
+	+	1	1
+	+	9	10
+	+	10	19
+	+	11	8
+	+	9	11
+	+	11	43
+	+	12	23
+	+	13	56
+	+	14	77
+	+	15	42
+	+	33	0
+	+	30	0
+	+	11	42
+	+	29	0
+	+	11	44
+	+	28	12
+	+	11	43
+	+	14	35
+	+	26	6
+	+	17	0
+	+	16	63
+	+	27	12
+	+	16	53
+	+	17	18
+	+	20	21
+	+	18	33
+	+	17	19
+	+	23	0
+	+	7	0
+	+	6	32
+	+	26	0
+	+	23	45
+	+	21	12
+	+	22	44
+	+	21	45
+	+	25	0
+	+	24	12
+	+	21	0
+	+	22	31
+
+> ~/views/searchPli.ejs
+	*	1686744676	0
+	"	1	0
+
+> ~/views/findPli
+	*	1686744148	0
+	"	1	0
+
+> ~/env
+	*	1686743216	0
+	"	1	0
 
 > ~/views/index.ejs
-	*	1685714959	0
-	"	29	22
-	^	29	23
-	.	28	43
-	+	35	6
+	*	1685939804	0
+	"	29	51
+	^	29	52
+	.	29	51
+	+	36	6
 	+	27	41
 	+	24	37
 	+	22	42
 	+	26	38
 	+	28	43
+	+	30	0
+	+	29	51
+
+> ~/search.ejs
+	*	1685937931	0
+	"	1	0
+
+> ~/views/Playlist.ejs
+	*	1685716987	0
+	"	1	0
 
 > ~/main.js
 	*	1685712426	0
@@ -551,15 +789,6 @@ $
 > ~/logInPli.ejs
 	*	1685613959	0
 	"	1	0
-
-> ~/.env
-	*	1685613874	0
-	"	2	17
-	^	2	18
-	.	2	18
-	+	2	25
-	+	5	17
-	+	2	18
 
 > ~/models/index.js
 	*	1685613806	0

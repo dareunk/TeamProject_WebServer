@@ -5,7 +5,7 @@
  *
  * For more information, read
  * https://developer.spotify.com/web-api/authorization-guide/#authorization_code_flow
- */
+i */
 
 const port = 80;
 const express = require('express'); // Express web server framework
@@ -31,9 +31,13 @@ const socket = require('socket.io');
 const server = http.createServer(app);
 const io = socket(server);
 const SpotifyWebApi = require('spotify-web-api-node');
-const client_id = '44593f8f0123478194b49d77f6b85f4f'; // Your client id
-const client_secret = 'eebbe9ab51264c24bbb0bde430b5027d'; // Your secret
-const redirect_uri = 'http://34.22.71.11/callback'; // Your redirect uri
+//const client_id = '44593f8f0123478194b49d77f6b85f4f'; // Your client id
+//const client_secret = 'eebbe9ab51264c24bbb0bde430b5027d'; // Your secret
+//const redirect_uri = 'http://34.22.71.11/callback'; // Your redirect uri
+const client_id = process.env.Client_id;
+const client_secret = process.env.Client_secret;
+const redirect_uri = process.env.Redirect_uri;
+
 const spotifyApi = new SpotifyWebApi({
     clientId: client_id,
     clientSecret: client_secret,
@@ -76,13 +80,14 @@ const connection = mysql.createConnection({
     database: process.env.DB_NAME
 });
 
-//spotify 로그인 했을 때 나오는 화면
+
 app.get('/login', function(req, res) {
   var state = generateRandomString(16);
   res.cookie(stateKey, state);
 
   // your application requests authorization
-  var scope = 'user-read-private user-read-email playlist-read-private playlist-read-collaborative playlist-modify-public playlist-modify-private';
+  var scope = 'user-read-private user-read-email playlist-read-private playlist-read-collaborative playlist-modify-public playlist-modify-private user-read-currently-playing user-read-playback-state user-read-recently-played';
+	
   res.redirect('https://accounts.spotify.com/authorize?' +
     querystring.stringify({
       response_type: 'code',
@@ -93,11 +98,11 @@ app.get('/login', function(req, res) {
     }));
 });
 
-/**계
- * Generates a random string containing numbers and letters
- * @param  {number} length The length of the string
- * @return {string} The generated string
- */
+
+// * Generates a random string containing numbers and letters
+ //* @param  {number} length The length of the string
+// * @return {string} The generated string
+// */
 var generateRandomString = function(length) {
   var text = '';
   var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -384,7 +389,7 @@ app.get('/playlist/:playlistId', async (req,res)=>{
     try {
         // Spotify Web API를 사용하여 플레이리스트 정보 가져오기
         const playlist = await spotifyApi.getPlaylist(playlistId);
-        //console.log(playlist);
+	//console.log(playlist);
         //console.log(playlist.body.tracks);
         //console.log(playlist.body.tracks.items);
         playlist.id = playlistId;
@@ -395,42 +400,75 @@ app.get('/playlist/:playlistId', async (req,res)=>{
         res.status(500).json({ error: 'Failed to retrieve playlist' });
     }
 });
-//노래를 검색하고 플레이리스트에 추가하기
-app.post('/playlist/:playlistId/addSong', async (req,res)=>{
-    const playlistId = req.params.playlistId;
-    const songName = req.body.songName; // 검색할 노래 이름
-    try {
-        //Spotify Web API를 사용하여 노래 검색
-        const searchResults = await spotifyApi.searchTracks(songName);
-        const tracks = searchResults.body.tracks.items;
-    
-        //검색결과 중 첫 번째 노래를 플레이리스트에 추가
-        if (tracks.length > 0) {
-	    console.log(tracks[0] + ", " + tracks[1] + ", " + tracks[2]);
-            const firstTrack = tracks[0];
-            await spotifyApi.addTracksToPlaylist(playlistId, [firstTrack.uri]);
-            res.redirect(`/playlist/${playlistId}`);
-        } else {
-            res.status(404).json({ error: 'Song not found' });
-        }
-    } catch (error) {
-        console.error('Error searching and adding song:', error);
-        res.status(500).json({ error: 'Failed to search and add song' });
-    }
+
+//app.post('/searchingtest/:trackid', async(req,res) => {
+//	console.log(req.params.trackid);
+//	const trackId = req.params.trackid;
+//	const playState = await spotifyApi.getMyCurrentPlayingTrack().then(function(data){                
+//	    console.log(data.body.item);
+//	    res.redirect(`/searching`);
+	  //console.log('Now playling: '+ data.body.item.name);
+  //      }, function(err){
+   //                     console.log("something went wrong!",err);
+     //           });
+//});
+
+app.post('/createPlaylist', async(req,res) =>{
+	const playlistName = req.body.playlistName;
+
+	try{
+		const playlist = await spotifyApi.createPlaylist(playlistName);
+		console.log(`created new playlist - ${playlistName}`);
+		res.redirect(`/playlist/${playlist.body.id}`);
+	}catch(error){
+		console.error("Error creating playlist:", error);
+		res.status(500).json({error: 'Failed to create playlist'});
+	}
+}); 
+
+
+app.get('/createPlaylist',(req,res) => {
+	res.render('createPlaylist');
 });
 
+ app.post('/playlist/:playlistId/editName', async (req, res) => {
+     const playlistId = req.params.playlistId;
+        const newName = req.body.newName;
+             try {
+                     await spotifyApi.changePlaylistDetails(playlistId, { name: newName });
+                             res.redirect(`/playlist/${playlistId}`);
+		                                      } catch (error){
+							      console.error('Error editing playlist name:', error);
+                                                 res.status(500).json({ error: 'Failed to edit playlist name' });                                                     }                                 
+ });
 //플레이리스트 목록 가져오기
 app.get('/playlists', async (req,res)=>{
     try {
         // Spotify Web API를 사용해서 플레이리스트 목록 가져오기
         const playlists = await spotifyApi.getUserPlaylists();
-       // console.log(playlists);
+       console.log(playlists);
         //console.log(playlists.body.items)
         res.render('playlists', { playlists });
     } catch (error) {
         console.error('Error retrieving playlists:', error);
         res.status(500).json({ error: 'Failed to retrieve playlists' });
     }
+});
+app.post('/addtrack/:playlistId', async (req, res) => {
+	  const trackUri = req.body.trackUri;
+	  const playlistId = req.params.playlistId;
+	  const chatRoom = chatRooms.find(playlist => playlist.playlistId === playlistId);
+	  try {
+		      const response = await spotifyApi.addTracksToPlaylist(playlistId, [trackUri]);
+		      console.log('Track added to playlist:', response);
+		      if (chatRoom)
+			        res.redirect(`/chat/${roomId}/${playlistId}`);
+		      else 
+			        res.redirect(`/playlist/${playlistId}`);
+		    } catch (err) {
+			        console.error('Failed to add track to playlist:', err);
+			        res.json({ success: false });
+			      }
 });
 
 app.get('/searchsong', async (req,res) => {
@@ -466,6 +504,16 @@ app.post('/searchingPli', async(req,res)=>{
 		console.log("something went wrong!",err);
 	});
 });
+
+app.get("/test", async(req,res)=>{
+	spotifyApi.getMyRecentlyPlayedTracks({
+		limit:20
+	}).then(function(data){
+		console.log("Your 20 most recently played tracks are:");
+		data.body.items.forEach(item=>console.log(item.track));
+	}, function(err){
+		console.log("Something went wrong!",err);
+	});});
 
 server.listen(80,() => {
     console.log(`Server running on port: ${port}`);

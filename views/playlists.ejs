@@ -7,17 +7,25 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #24222c;
+      height:100%;
+      width:100%;
     }
 
     .playlist-container {
-      display: grid;
+      display:grid;    
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       grid-gap: 20px;
       margin: 20px;
+      padding:100px;
     }
-
+    h1{ color : #ffffff;
+	margin-left:100px;
+	margin-top:50px;
+    }
     .playlist-item {
       text-align: center;
+	
     }
 
     .playlist-image {
@@ -30,18 +38,41 @@
 
     .playlist-name {
       font-weight: bold;
+      color: #67A7E1;
     }
 
     .playlist-link {
       color: #1db954;
       text-decoration: none;
     }
+   .searchPli{
+  	background-color:#ffffff;
+	height:30px;
+	width:200px;
+	border-radius:10px;
+	top:50px;
+	left:1022px;
+	position:absolute;
+
+
+  }
+a{ text-decoration-line:none;
+}
+
+    .button{
+   width:90px;
+   height:30px;
+   left:1250px;
+   top:50px;
+   border-radius:10px;
+   position:absolute;
+    }
   </style>
 </head>
 <body>
-  <h1>Playlists</h1>
+	<a href="/plimatelist"><h1>PLIMATE</h1></a>
    <form action='/searchingPli' method='post'>
-          <input type="text" name="searchPli" value="">
+          <input type="text" name="searchPli" class="searchPli" value="">
           <input type="submit" class="button" value="search">
           </form>
   <div class="playlist-container">
@@ -57,7 +88,7 @@
   </div>
   <div>
       <ul>
-        <li><a href="/plimatelist">playlist</a></li>
+	      <!-- <li><a href="/plimatelist">playlist</a></li>-->
       </ul>
     </div>
 </body>
